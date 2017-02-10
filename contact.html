@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CatOnTheWay</title>
+
+	<!-- link my normalize styleguide -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" >
+	<!-- link my grid styleguide -->
+	<link rel="stylesheet" type="text/css" href="css/flexbox.css" >
+	<link rel="stylesheet" type="text/css" href="css/homepage.css" >
+</head>
+	<body>
+
+		<div class="flexContainer">
+			<div class="productBtnBox">
+				<div id="productBtn" onclick="toggleProductListPanel('productListPanel')">
+			 		<span>... <br> ... <br> ... </span> 
+
+			 	</div>
+			 </div>
+			 
+			 <div class="nav">	
+				<div class="boxShort">
+					<a class=""> CONTACT </a>
+				</div>
+				<div class="boxShort">
+					<a class=""> ABOUT </a>
+				</div>
+				<div class="boxLong">
+					<a class=""> SHOPPING BAG </a>
+				</div>
+				<div class="boxLong">
+					<a class=""> LOGIN/ REGISTER </a>
+				</div>
+			</div>
+		</div>
+
+		<!-- toggle panel -->
+		<div id="productListPanel">
+		<!-- close button -->
+		<div class="closeProductListBtn" onclick="toggleProductListPanel('productListPanel')">
+			<img src="img/close.png" alt="close icon">
+		</div>
+
+		<!-- products section -->
+		<div class="productList">
+			<a href="bagpack.html">
+				<figure class="productListItem">
+					<img src="img/bag.jpg" alt="product1">
+					<figcaption>
+						<p>cat carrier</p>
+						<p class="productListPrice">$290</p>
+					</figcaption>
+				</figure>
+			</a>
+			<figure class="productListItem">
+				<img src="img/spacesuit1.jpg" alt="product2">
+				<figcaption>
+					<p>spacesuit</p>
+					<p class="productListPrice">$345</p>
+				</figcaption>
+			</figure>
+
+			<figure class="productListItem">
+				<img src="img/swimsuit.jpg" alt="product3">
+				<figcaption>
+					<p>swimsuit</p>
+					<p class="productListPrice">$425</p>
+				</figcaption>
+			</figure>						
+		</div>
+
+	</div>
+
+		<div id="coverPanel">
+
+		</div>
+		<script type="text/javascript" src="js/script.js"></script>
+		
+	</body>
+</html>
