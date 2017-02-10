@@ -43,15 +43,19 @@ h1{
 }
 
 h2{
-	font-size:2.5rem;
+	font-size:2rem;
+	font-family:gravity-light;
+	color:rgb(68,68,68);
 }
 
 h3{
 	font-size:1.3rem;
 }
 
+
 .productDetail{
 	font-size:.8em;
+	line-height: 20px;
 }
 
 body{
@@ -136,9 +140,9 @@ a:hover{
 .closeProductListBtn{
 	margin:.9em; 
 	/*padding: 1.2em 0 0 .9em;*/
-	border:solid 1px rgb(150,150,150);
-	width:3.5em;
-	height:3.5em;
+	/*border:solid 1px rgb(150,150,150);*/
+	width:2em;
+	height:2em;
 	display: block;
 	line-height:80%;
 	letter-spacing: 2px;
@@ -213,6 +217,10 @@ ol{
 nav{
 	width:70%;
 	margin:0;
+}
+
+.topLogo{
+	margin-left:2em;
 }
 
 /* interactive elements end!!!! */
