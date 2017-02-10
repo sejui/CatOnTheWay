@@ -1,0 +1,91 @@
+.div-homepage{
+	/*border:solid 1px;*/
+
+}
+.homepageBg{
+	background-image: url('../img/travelcat2.jpg');
+	background-repeat: no-repeat;
+	background-position-x:-250px;
+	width:100%;
+	height:90vh;
+	/*border: solid;*/
+}
+.logo{
+	position: relative;
+	left:20%;
+	top:40%;
+}
+
+/* when the viewport width is greater than 76.87em */
+@media (min-width:76.87em){
+	.div-homepage{
+		display: flex;
+	}
+	.homepageBg{
+		background-position-x:-250px;
+	}
+
+	.logo{
+		position: relative;
+		left:20%;
+		top:40%;
+	}	
+
+}
+
+/* when viewport width is smaller than 76em, */
+@media (max-width:76.87em){
+	.div-homepage{
+		display:block;
+	}
+
+	.homepageBg{
+		background-position-x:0px;
+	}
+
+	.logo{
+		position: relative;
+		left:35%;
+		top:0%;
+	}	
+}
+
+@media (max-width:60em){
+	.logo h1{
+		font-size:80%;
+	}
+}
+
+/************* product list flyout panel ******************/
+
+#productListPanel{
+	position:absolute;
+	/*width:80%;*/
+	width:0;
+	height:100%;
+	top:0;
+	left:0;
+	/*border:solid red;*/
+	background-color: white;
+	overflow: hidden;
+	/* this panel will above all content that not belongs to productlist */
+	z-index: 100;
+	/* tell the productlist panel to transit the width in a linear style */
+	-webkit-transition:width 0.2s linear 0s;
+	transition:width 0.2s linear 0s;
+}
+
+#coverPanel{
+	z-index: 10;
+	position:absolute;
+	background-color: black;
+	opacity:.2;
+	height:100vh;
+	width:100%;
+	top:0;
+	display: none;
+}
+
+
+
+

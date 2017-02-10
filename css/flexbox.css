@@ -1,0 +1,53 @@
+.flexContainer{
+	display: flex;
+	/*puts margin*/
+	justify-content: space-between; 
+
+}
+
+[class ^='box-']{
+	/*border:solid 1px grey;*/
+	/*define the width of each box*/
+	/*flex-basis:10%;*/
+}
+
+[class ^='div']:before{
+	clear:both;
+	display: block;
+}
+.boxLong{
+	flex:1;
+	/*flex-basis:25%;*/
+	min-width:175px;
+}
+
+.boxShort{
+	flex:.6;
+	min-width:110px;
+}
+
+.productBtnBox{
+	flex:5;
+	margin:1em;
+}
+.nav{
+	flex:4;
+	display: flex;
+	margin-top:1em;
+}
+/*when the device has a max width of 76em*/
+@media (max-width:76.87em){
+		.boxLong{
+			flex:2;
+		}
+		.boxShort{
+			flex:1.5;
+		}
+
+} 
+/*when the device has a minimum width of 76em*/
+
+
+.box-flex1{
+	flex:1;
+}
