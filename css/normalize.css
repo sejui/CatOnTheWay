@@ -219,6 +219,58 @@ nav{
 	margin:0;
 }
 
+/*search function*/
+
+.boxShop img{
+	width: 20%;
+	float: right;
+}
+
+.boxSearch input[type="text"] {
+  height: 28px;
+  font-size: 1.3em;
+  display: inline-block;
+  font-family: "gravity";
+  border: none;
+  outline: none;
+  color: #555;
+  padding: 10px;
+  width: 0px;
+  position: absolute;
+  background: none;
+  z-index: 3;
+  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  cursor: pointer;
+}
+.boxSearch input[type="text"]:focus:hover {
+  border-bottom: 1px solid #BBB;
+}
+.boxSearch input[type="text"]:focus {
+  width: 150%;
+  z-index: 1;
+  border-bottom: 1px solid #BBB;
+  cursor: text;
+}
+.boxSearch input[type="submit"] {
+	/*float: right;*/
+	width: 10%;
+	background-image: url("../img/search.png")  no-repeat;
+	background-size: contain;
+	display: inline-block;
+	position: absolute;
+	border: none;
+	text-indent: -10000px;
+    /*right: 0;*/
+	z-index: 2;
+	opacity: 0.4;
+	cursor: pointer;
+	transition: opacity .4s ease;
+	/*overflow: hidden;*/
+}
+.boxSearch input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
 .topLogo{
 	margin-left:2em;
 }
