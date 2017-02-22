@@ -20,14 +20,16 @@
 .boxLong{
 	flex:1;
 	/*flex-basis:25%;*/
-	min-width:145px;
+	min-width:100px;
+	/*text-align: right;*/
 }
 
 
-/*.boxShort{
+.boxShort{
 	flex:1;
-	min-width:110px;
-}*/
+	min-width:100px;
+	/*margin-left: 3em;*/
+}
 
 .boxShop{
    flex: 1; 
@@ -39,12 +41,16 @@
 	position: relative;
 }
 
+.logobox{
+	flex: 3;
+}
+
 .productBtnBox{
-	flex:5;
+	flex:3;
 	margin:1em;
 }
 .nav{
-	flex:4;
+	flex:3;
 	display: flex;
 	margin-top:1em;
 }

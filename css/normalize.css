@@ -114,7 +114,7 @@ a:hover{
 	padding: .4em 1em .7em 1em;
 	border:solid 1px rgb(150,150,150);
 	width:3.5em;
-	height:100%;
+/*	height:100%;*/
 	display: inline-block;
 	line-height:80%;
 	letter-spacing: 2px;
@@ -222,8 +222,8 @@ nav{
 /*search function*/
 
 .boxShop img{
-	width: 20%;
-	float: right;
+	max-width: 20%;
+	float: left;
 }
 
 .boxSearch input[type="text"] {
@@ -246,7 +246,7 @@ nav{
   border-bottom: 1px solid #BBB;
 }
 .boxSearch input[type="text"]:focus {
-  width: 150%;
+  width: 90%;
   z-index: 1;
   border-bottom: 1px solid #BBB;
   cursor: text;
@@ -273,6 +273,13 @@ nav{
 
 .topLogo{
 	margin-left:2em;
+}
+
+.logobox img{
+	width: 30%;
+	margin-left: 10em;
+	margin-top: 1em;
+
 }
 
 /* interactive elements end!!!! */
