@@ -76,8 +76,7 @@ body{
 a,a:visited{
 	color:black;
 	text-decoration: none;
-	font-family:gravity-bold;
-
+	
 	/* make color transition*/
 	-webkit-transition:color .5s;
 	transition:color .5s;
@@ -89,16 +88,16 @@ a:hover{
 	cursor:pointer;
 }
 
-.btn{
+/*.btn{
 	margin:0;
 	box-sizing:border-box;
 	padding: .8em;
 	border:solid 1px;
-	/*width:7.5em;*/
+
 	height:100%;
 	display: inline-block;
 
-	/* make color transition*/
+
 	-webkit-transition:border-color .5s;
 	transition:border-color .5s;
 }
@@ -107,14 +106,41 @@ a:hover{
 }
 .btn a{
 	letter-spacing: 2px;
+}*/
+
+.bold{
+	font-family:gravity-bold;
+	margin-left:1em;
+}
+
+a .btn{
+    background-color: #E52952;
+    letter-spacing: .5px;
+    font-family: gravity-light;
+    font-size: .8em;
+    border: none;
+    color: white;
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+
+    -webkit-transition:background-color .5s;
+	transition:background-color .5s;
+}
+
+a .btn:hover{
+	background-color: rgb(68,68,68);
 }
 
 #productBtn{
-	margin:0;
-	padding: .4em 1em .7em 1em;
-	border:solid 1px rgb(150,150,150);
-	width:3.5em;
-/*	height:100%;*/
+	margin-left: 2em;
+	padding: .1em 1em .1em .8em;
+	border:solid 1px rgb(68,68,68);
+	width:3em;
+	height:3em;
 	display: inline-block;
 	line-height:80%;
 	letter-spacing: 2px;
@@ -217,6 +243,10 @@ ol{
 nav{
 	width:70%;
 	margin:0;
+
+}
+.boxLong a, .boxShort a{
+	font-family: gravity-book;
 }
 
 /*search function*/

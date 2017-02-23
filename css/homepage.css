@@ -1,19 +1,63 @@
-.div-homepage{
-	/*border:solid 1px;*/
 
-}
 .homepageBg{
-	background-image: url('../img/travelcat2.jpg');
+	/* for browser that don't support gradient */
+	background:#B7C1EA;
+	/* gradient color */
+	background:-webkit-linear-gradient(#B7C1EA, #C3ABC7);
+	background: -moz-linear-gradient(#B7C1EA, #C3ABC7); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#B7C1EA, #C3ABC7);
 	background-repeat: no-repeat;
-	background-position-x:-250px;
-	width:100%;
-	height:90vh;
+	
+	width:100vw;
+	height:100vh;
 	/*border: solid;*/
 }
-.logo{
-	position: relative;
-	left:20%;
-	top:40%;
+.home-text{
+    position: absolute;
+    height: 200px;
+    left: 50%;
+    margin: -200px -270px;
+    top: 50%;
+}
+.home-text p{
+	font-family:gravity-bold;
+	font-size:1.8em;
+	color:white;
+	text-align: center;
+	line-height: 1.4em;
+	letter-spacing: 1px;
+
+}
+
+.home-product{
+    bottom: 0px;
+    left: 50%;
+    position: absolute;
+    margin: auto -320px
+}
+.home-product img{
+    display: inline-block;
+    width: 50%;
+    left: 50%;
+    height: auto;
+    float: left;
+}
+
+
+
+.home-product-detail{
+	width: 300px;
+    position: relative;
+    margin-top: 20%;
+    color:white;
+    
+    vertical-align: middle;
+    display: inline-block;
+
+}
+
+.home-product-detail .btn{
+	width:50%;
 }
 
 /* when the viewport width is greater than 76.87em */
@@ -21,15 +65,8 @@
 	.div-homepage{
 		display: flex;
 	}
-	.homepageBg{
-		background-position-x:-250px;
-	}
 
-	.logo{
-		position: relative;
-		left:20%;
-		top:40%;
-	}	
+
 
 }
 
@@ -39,15 +76,7 @@
 		display:block;
 	}
 
-	.homepageBg{
-		background-position-x:0px;
-	}
-
-	.logo{
-		position: relative;
-		left:35%;
-		top:0%;
-	}	
+	
 }
 
 @media (max-width:60em){
