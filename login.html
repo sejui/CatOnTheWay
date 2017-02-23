@@ -9,9 +9,11 @@
 	<!-- link my grid styleguide -->
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css" >
 	<link rel="stylesheet" type="text/css" href="css/homepage.css" >
+	<link rel="stylesheet" type="text/css" href="css/login.css" >
 </head>
 	<body>
-
+			<!-- main navigation -->
+	<div class="backgroundContainer">
 		<div class="flexContainer">
 			<div class="productBtnBox">
 				<div id="productBtn" onclick="toggleProductListPanel('productListPanel')">
@@ -20,55 +22,87 @@
 			 	</div>
 			 </div>
 
-			<div class="nav">	
-				<!-- <div class="boxShort">
-					<a href="contact.html"> CONTACT </a> 
-				</div> -->
-				<div class="boxShort">
+			 <div class="logobox">
+			 	<img src="img/logo.png">	
+			 </div>
+
+			 <div class="nav">	
+		
+				<div class="boxLong">
 					<a href="about.html"> ABOUT </a>
 				</div>
-				<div class="boxLong">
-					<a href="shopping.html"> SHOPPING BAG </a>
+				<div class="boxShort">
+					<a href="login.html"> LOGIN</a>
 				</div>
-				<div class="boxLong">
-					<a href="login.html"> LOGIN/ REGISTER </a>
+				<div class="boxSearch">
+					<form action="" autocomplete="on">
+					 <input id="search" name="search" type="text">
+					 <input id="search_submit" value="search" type="submit">
+					<!-- <img src="img/search.png" alt="search button"> -->
+					</form>
 				</div>
+
+				<div class="boxShop">
+					<img src="img/shoppingbg.png" alt="shopping bag">
+				</div>
+				
 			</div>
 		</div>
 
-		<!-- toggle panel -->
-		<div id="productListPanel">
-		<!-- close button -->
-		<div class="closeProductListBtn" onclick="toggleProductListPanel('productListPanel')">
-			<img src="img/close.png" alt="close icon">
-		</div>
+			<!-- toggle panel -->
+			<div id="productListPanel">
+			<!-- close button -->
+			<div class="closeProductListBtn" onclick="toggleProductListPanel('productListPanel')">
+				<img src="img/close.png" alt="close icon">
+			</div>
 
-		<!-- products section -->
-		<div class="productList">
-			<a href="bagpack.html">
+			<!-- products section -->
+			<div class="productList">
+				<a href="bagpack.html">
+					<figure class="productListItem">
+						<img src="img/bag.jpg" alt="product1">
+						<figcaption>
+							<p>cat carrier</p>
+							<p class="productListPrice">$290</p>
+						</figcaption>
+					</figure>
+				</a>
 				<figure class="productListItem">
-					<img src="img/bag.jpg" alt="product1">
+					<img src="img/spacesuit1.jpg" alt="product2">
 					<figcaption>
-						<p>cat carrier</p>
-						<p class="productListPrice">$290</p>
+						<p>spacesuit</p>
+						<p class="productListPrice">$345</p>
 					</figcaption>
 				</figure>
-			</a>
-			<figure class="productListItem">
-				<img src="img/spacesuit1.jpg" alt="product2">
-				<figcaption>
-					<p>spacesuit</p>
-					<p class="productListPrice">$345</p>
-				</figcaption>
-			</figure>
 
-			<figure class="productListItem">
-				<img src="img/swimsuit.jpg" alt="product3">
-				<figcaption>
-					<p>swimsuit</p>
-					<p class="productListPrice">$425</p>
-				</figcaption>
-			</figure>						
+				<figure class="productListItem">
+					<img src="img/swimsuit.jpg" alt="product3">
+					<figcaption>
+						<p>swimsuit</p>
+						<p class="productListPrice">$425</p>
+					</figcaption>
+				</figure>						
+			</div>
+
+		</div>
+
+
+		<div class="loginbox">
+			<h3>LOGIN</h3>
+			<form>
+
+			 
+			    <input type="text" placeholder="Email" name="uname" >
+
+			    <input type="password" placeholder="Password" name="psw">
+			        
+			<div class="lower">
+				<label for="checkbox"> Forgot your password?	
+				</label>
+			</div>	
+			<button class="logbutton">LOG IN</button>
+
+			</form>
 		</div>
 
 	</div>

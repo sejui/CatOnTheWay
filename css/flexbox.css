@@ -3,7 +3,6 @@
 	/*puts margin*/
 	justify-content: space-between; 
 	flex-direction: row;
-
 }
 
 [class ^='box-']{
@@ -54,6 +53,8 @@
 	display: flex;
 	margin-top:1em;
 }
+
+
 /*when the device has a max width of 76em*/
 @media (max-width:76.87em){
 		.boxLong{
@@ -85,7 +86,7 @@
 }
 
 .box-flex6{
-	flex:6;
+	flex:6;	
 }
 .box-flex8{
 	flex:8;

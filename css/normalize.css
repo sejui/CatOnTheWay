@@ -233,7 +233,7 @@ nav{
   font-family: "gravity";
   border: none;
   outline: none;
-  color: #555;
+  color: black;
   padding: 10px;
   width: 0px;
   position: absolute;
@@ -243,12 +243,12 @@ nav{
   cursor: pointer;
 }
 .boxSearch input[type="text"]:focus:hover {
-  border-bottom: 1px solid #BBB;
+  border-bottom: 1px solid black;
 }
 .boxSearch input[type="text"]:focus {
   width: 90%;
   z-index: 1;
-  border-bottom: 1px solid #BBB;
+  border-bottom: 1px solid black;
   cursor: text;
 }
 .boxSearch input[type="submit"] {
@@ -277,7 +277,7 @@ nav{
 
 .logobox img{
 	width: 30%;
-	margin-left: 10em;
+	margin-left: 7em;
 	margin-top: 1em;
 
 }
