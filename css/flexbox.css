@@ -1,7 +1,7 @@
 .flexContainer{
 	display: flex;
 	/*puts margin*/
-	justify-content: space-between; 
+	/*justify-content: space-between; */
 	flex-direction: row;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .boxLong{
-	flex:1;
+	flex:1 1 auto;
 	/*flex-basis:25%;*/
 	min-width:100px;
 	/*text-align: right;*/
@@ -25,31 +25,31 @@
 
 
 .boxShort{
-	flex:1;
+	flex:1 1 auto;
 	min-width:100px;
 	/*margin-left: 3em;*/
 }
 
 .boxShop{
-   flex: 1; 
+   flex: 1 1 auto; 
 }
 
 .boxSearch{
-	flex: 1;
+	flex: 1 1 auto;
 	display: inline-block;
 	position: relative;
 }
 
 .logobox{
-	flex: 3;
+	flex: 3 1 auto;
 }
 
 .productBtnBox{
-	flex:3;
+	flex:3 1 auto;
 	margin:1em;
 }
 .nav{
-	flex:3;
+	flex:3 1 auto;
 	display: flex;
 	margin-top:1em;
 }
@@ -69,25 +69,27 @@
 
 
 .box-flex1{
-	flex:1;
+	flex:1 1 auto;
 }
 .box-flex2{
-	flex:2;
-	display: flex;
-	justify-content: space-between;
+	flex:2 1 auto;
+
+}
+.box-flex2 img{
+	align-self: center;
 }
 .box-flex3{
-	flex:3;
+	flex:3 1 auto;
 
 }
 
 .box-flex4{
-	flex:4;
+	flex:4 1 auto;
 }
 
 .box-flex6{
-	flex:6;	
+	flex:6 1 auto;	
 }
 .box-flex8{
-	flex:8;
+	flex:8 1 auto;
 }
