@@ -96,7 +96,7 @@
 	left:0;
 	/*border:solid red;*/
 	background-color: white;
-	overflow: hidden;
+	overflow: scroll;
 	/* this panel will above all content that not belongs to productlist */
 	z-index: 100;
 	/* tell the productlist panel to transit the width in a linear style */
@@ -106,8 +106,7 @@
 #productListPanel h2{
     margin-top: 3em;
     position: relative;
-    left: 50%;
-    margin-left: -100px;
+    text-align: center;
     margin-bottom: 3em;
     font-family: gravity-bold;
 
@@ -143,6 +142,7 @@
 
 .productList{
 	margin-top:0em;
+	flex-wrap: wrap;
 }
 
 

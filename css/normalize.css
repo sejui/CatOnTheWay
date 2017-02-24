@@ -119,8 +119,8 @@ a:hover{
 
 a .btn{
     background-color: #E52952;
-    letter-spacing: .5px;
-    font-family: gravity-light;
+    letter-spacing: 1px;
+    font-family: gravity-bold;
     font-size: .8em;
     border: none;
     color: white;
@@ -333,7 +333,7 @@ nav{
 
 .productListItem{
 	width:20em;
-	margin:2em 1em 0 4em;
+	margin:2em 1em 4em 4em;
 	display:inline-block;
 	float:left;
 

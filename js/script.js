@@ -9,8 +9,10 @@ function toggleProductListPanel(x){
 	if(panel.style.width == maxW){
 		panel.style.width = "0px";
 		coverPanel.style.display="none";
+		coverPanel.style.overflow = "hidden !important";
 	}else{
 		panel.style.width = maxW;
 		coverPanel.style.display = "initial";
+		coverPanel.style.overflow = "scroll !important";
 	}
 }
