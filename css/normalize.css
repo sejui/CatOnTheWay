@@ -168,9 +168,7 @@ a .btn:hover{
 }
 
 .closeProductListBtn{
-	margin:.9em; 
-	/*padding: 1.2em 0 0 .9em;*/
-	/*border:solid 1px rgb(150,150,150);*/
+	margin:1.5em; 
 	width:2em;
 	height:2em;
 	display: block;
@@ -356,7 +354,7 @@ nav{
 
 
 .colorBlue{
-	background-color:#25bdce;
+	color:#6DC1E2;
 }
 .colorBlack{
 	background-color:rgb(0,0,0);

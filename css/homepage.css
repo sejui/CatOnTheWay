@@ -50,7 +50,7 @@
     position: relative;
     margin-top: 20%;
     color:white;
-    
+    letter-spacing: .5px;
     vertical-align: middle;
     display: inline-block;
 
@@ -103,6 +103,19 @@
 	-webkit-transition:width 0.2s linear 0s;
 	transition:width 0.2s linear 0s;
 }
+#productListPanel h2{
+    margin-top: 3em;
+    position: relative;
+    left: 50%;
+    margin-left: -100px;
+    margin-bottom: 3em;
+    font-family: gravity-bold;
+
+}
+#productListPanel p{
+	position: relative;
+	left:10%;
+}
 
 #coverPanel{
 	z-index: 10;
@@ -113,6 +126,10 @@
 	width:100%;
 	top:0;
 	display: none;
+}
+
+.productList{
+	margin-top:-1em;
 }
 
 
