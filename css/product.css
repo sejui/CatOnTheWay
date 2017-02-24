@@ -114,7 +114,7 @@
 	/*left:50%;*/
 	position: relative;
 	height:50%;
-	width:80%;
+	width:60%;
 	border:solid;
 
 }
@@ -122,6 +122,17 @@
 .price img{
 	height:100%;
 	width:auto;
+}
+
+.productoverview{
+	width:60%;
+}
+
+.productoverview h2{
+	font-family:gravity-bold;
+}
+.productoverview p{
+	line-height: 22px;
 }
 
 
