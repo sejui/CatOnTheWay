@@ -52,6 +52,10 @@ h3{
 	font-size:1.3rem;
 }
 
+p{
+	font-size: 0.7em;
+}
+
 
 .productDetail{
 	font-size:.8em;
@@ -295,7 +299,7 @@ nav{
 	opacity: 0.4;
 	cursor: pointer;
 	transition: opacity .4s ease;
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 .boxSearch input[type="submit"]:hover {
   opacity: 0.8;
@@ -304,6 +308,8 @@ nav{
 .topLogo{
 	margin-left:2em;
 }
+
+/*logo*/
 
 .logobox img{
 	width: 30%;

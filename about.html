@@ -9,8 +9,13 @@
 	<!-- link my grid styleguide -->
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css" >
 	<link rel="stylesheet" type="text/css" href="css/homepage.css" >
+	<link rel="stylesheet" type="text/css" href="css/about.css" >
+
 </head>
 	<body>
+			<!-- main navigation -->
+
+	<div class="backgroundContainer">
 
 		<div class="flexContainer">
 			<div class="productBtnBox">
@@ -18,46 +23,64 @@
 			 		<span>... <br> ... <br> ... </span> 
 
 			 	</div>
+			 	<span class="bold">PRODUCTS</span>
 			 </div>
 
-			<div class="nav">	
-				<div class="boxShort">
-					<a href="contact.html"> CONTACT </a> 
-				</div>
-				<div class="boxShort">
+			 <a href="index.html" class="logobox">
+			 	<img src="img/logo.png" alt="logo">	
+			 </a>
+		
+
+			 <div class="nav">	
+		
+				<div class="boxLong">
 					<a href="about.html"> ABOUT </a>
 				</div>
-				<div class="boxLong">
-					<a href="shopping.html"> SHOPPING BAG </a>
+				<div class="boxShort">
+					<a href="login.html"> LOGIN</a>
 				</div>
-				<div class="boxLong">
-					<a href="login.html"> LOGIN/ REGISTER </a>
+				<div class="boxSearch">
+					<form>
+					 <input id="search" name="search" type="text">
+					 <input id="search_submit" value="search" type="submit">
+					<!-- <img src="img/search.png" alt="search button"> -->
+					</form>
 				</div>
+
+				<div class="boxShop">
+					<img src="img/shoppingbg.png" alt="shopping bag">
+				</div>
+				
 			</div>
 		</div>
 
-		<!-- toggle panel -->
-		<div id="productListPanel">
+			<!-- toggle panel -->
+			<div id="productListPanel">
 		<!-- close button -->
 		<div class="closeProductListBtn" onclick="toggleProductListPanel('productListPanel')">
 			<img src="img/close.png" alt="close icon">
 		</div>
 
+		<h2>ALL PRODUCTS</h2>
+		<p>
+			sort by price low to high
+		</p>
+
 		<!-- products section -->
-		<div class="productList">
-			<a href="bagpack.html">
+	<div class="productList">
+		<a href="bagpack.html">
 				<figure class="productListItem">
-					<img src="img/bag.jpg" alt="product1">
+					<img src="img/backpack7.jpg" alt="product1">
 					<figcaption>
-						<p>cat carrier</p>
+						<p>CAT CARRIER</p>
 						<p class="productListPrice">$290</p>
 					</figcaption>
 				</figure>
 			</a>
 			<figure class="productListItem">
-				<img src="img/spacesuit1.jpg" alt="product2">
+				<img src="img/spacesuit_small.jpg" alt="product2">
 				<figcaption>
-					<p>spacesuit</p>
+					<p>SPACESUIT</p>
 					<p class="productListPrice">$345</p>
 				</figcaption>
 			</figure>
@@ -65,10 +88,17 @@
 			<figure class="productListItem">
 				<img src="img/swimsuit.jpg" alt="product3">
 				<figcaption>
-					<p>swimsuit</p>
+					<p>DOG FRIENDLY SWIMSUIT</p>
 					<p class="productListPrice">$425</p>
 				</figcaption>
 			</figure>						
+		</div>
+	</div>
+
+		<div class="aboutcontent">
+			<h2>ABOUT</h2>
+			<p>Founded in 2017, Cat On the Way was developed by pet lovers to share the world with their pets. Dedicated to providing the best quality products for their pets and pet-parents, Cat On the Way’s innovative designs, solution-based products, and proprietary collections are a great way to give your pet a window to the world. </p>
+			<p>If you have any question , please free to <a href="#">contact us.</a></p>		
 		</div>
 
 	</div>

@@ -1,0 +1,46 @@
+.backgroundContainer {
+	background-image: url(../img/bg1.jpg);
+/*	margin: 0;
+	padding: 0;
+	top: 0;
+    left:0;
+    right:0;
+    bottom:0;*/
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    min-height: 100vh;
+    min-width: 100%;
+    background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center center;
+	/*background-attachment: fixed;*/
+    background-size:cover;
+}
+
+.aboutcontent{
+	width: 450px;
+	height: 300;
+	top: 60%;
+	left: 20%;
+	margin-left: 100px;
+	margin-top: 300px;
+}
+
+.aboutcontent h2{
+	font-size: 3em;
+}
+
+.aboutcontent a, .aboutcontent a:visited{
+	color:#E52952;
+	text-decoration: none;
+
+	/* make color transition*/
+	-webkit-transition:color .5s;
+	transition:color .5s;
+}
+/*<a> in hover*/
+.aboutcontent a:hover{
+	color:rgb(150,150,150);
+	text-decoration: none;
+	cursor:pointer;
+}

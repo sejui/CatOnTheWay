@@ -20,11 +20,12 @@
 			 		<span>... <br> ... <br> ... </span> 
 
 			 	</div>
+			 	<span class="bold">PRODUCTS</span>
 			 </div>
 
-			 <div class="logobox">
-			 	<img src="img/logo.png">	
-			 </div>
+			  <a href="index.html" class="logobox">
+			 	<img src="img/logo.png" alt="logo">	
+			 </a>
 
 			 <div class="nav">	
 		
@@ -35,7 +36,7 @@
 					<a href="login.html"> LOGIN</a>
 				</div>
 				<div class="boxSearch">
-					<form action="" autocomplete="on">
+					<form>
 					 <input id="search" name="search" type="text">
 					 <input id="search_submit" value="search" type="submit">
 					<!-- <img src="img/search.png" alt="search button"> -->
@@ -50,41 +51,45 @@
 		</div>
 
 			<!-- toggle panel -->
-			<div id="productListPanel">
-			<!-- close button -->
-			<div class="closeProductListBtn" onclick="toggleProductListPanel('productListPanel')">
-				<img src="img/close.png" alt="close icon">
-			</div>
+	<div id="productListPanel">
+		<!-- close button -->
+		<div class="closeProductListBtn" onclick="toggleProductListPanel('productListPanel')">
+			<img src="img/close.png" alt="close icon">
+		</div>
 
-			<!-- products section -->
-			<div class="productList">
-				<a href="bagpack.html">
-					<figure class="productListItem">
-						<img src="img/bag.jpg" alt="product1">
-						<figcaption>
-							<p>cat carrier</p>
-							<p class="productListPrice">$290</p>
-						</figcaption>
-					</figure>
-				</a>
+		<h2>ALL PRODUCTS</h2>
+		<p>
+			sort by price low to high
+		</p>
+
+		<!-- products section -->
+		<div class="productList">
+			<a href="bagpack.html">
 				<figure class="productListItem">
-					<img src="img/spacesuit1.jpg" alt="product2">
+					<img src="img/backpack7.jpg" alt="product1">
 					<figcaption>
-						<p>spacesuit</p>
-						<p class="productListPrice">$345</p>
+						<p>CAT CARRIER</p>
+						<p class="productListPrice">$290</p>
 					</figcaption>
 				</figure>
+			</a>
+			<figure class="productListItem">
+				<img src="img/spacesuit_small.jpg" alt="product2">
+				<figcaption>
+					<p>SPACESUIT</p>
+					<p class="productListPrice">$345</p>
+				</figcaption>
+			</figure>
 
-				<figure class="productListItem">
-					<img src="img/swimsuit.jpg" alt="product3">
-					<figcaption>
-						<p>swimsuit</p>
-						<p class="productListPrice">$425</p>
-					</figcaption>
-				</figure>						
-			</div>
-
+			<figure class="productListItem">
+				<img src="img/swimsuit.jpg" alt="product3">
+				<figcaption>
+					<p>DOG FRIENDLY SWIMSUIT</p>
+					<p class="productListPrice">$425</p>
+				</figcaption>
+			</figure>						
 		</div>
+	</div>
 
 
 		<div class="loginbox">
@@ -97,7 +102,7 @@
 			    <input type="password" placeholder="Password" name="psw">
 			        
 			<div class="lower">
-				<label for="checkbox"> Forgot your password?	
+				<label> Forgot your password?	
 				</label>
 			</div>	
 			<button class="logbutton">LOG IN</button>
