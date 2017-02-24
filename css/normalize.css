@@ -303,6 +303,11 @@ nav{
   opacity: 0.8;
 }
 
+.boxShop img:hover{   
+     opacity: 0.3;
+     transition: opacity .4s ease;
+}
+
 .topLogo{
 	margin-left:2em;
 }
