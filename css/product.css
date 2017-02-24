@@ -114,7 +114,11 @@
 	/*left:50%;*/
 	position: relative;
 	height:50%;
+<<<<<<< Updated upstream
 	width:60%;
+=======
+	width:80%;
+>>>>>>> Stashed changes
 	border:solid;
 
 }
@@ -124,6 +128,7 @@
 	width:auto;
 }
 
+<<<<<<< Updated upstream
 .productoverview{
 	width:60%;
 }
@@ -135,4 +140,6 @@
 	line-height: 22px;
 }
 
+=======
+>>>>>>> Stashed changes
 
