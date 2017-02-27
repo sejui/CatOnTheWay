@@ -16,3 +16,20 @@ function toggleProductListPanel(x){
 		coverPanel.style.overflow = "scroll !important";
 	}
 }
+
+// toggel information
+function toggleInfo(x){
+	var panel = document.getElementById(x);
+	var information = document.getElementById("info");
+	var maxH = "160px";
+
+
+	if(information.style.height == maxH){
+		information.style.height = "0px";
+		// information.style.display="none";
+	}else{
+		information.style.height = maxH;
+		// information.style.display="initial";
+
+	}
+}
