@@ -54,6 +54,16 @@
 	margin-top:1em;
 }
 
+.checkoutbox {
+
+}
+.checkout-process{
+	flex:0 1 auto;
+}
+.checkout-summary{
+	flex:1 1 auto;
+}
+
 
 /*when the device has a max width of 76em*/
 @media (max-width:76.87em){

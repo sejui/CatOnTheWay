@@ -6,39 +6,43 @@
 }
 .loginbox{
     position: fixed;
-    width: 500px;
-    height: 280px;
+/*    width: 500px;
+    height: 280px;*/
     top: 50%;
-    left: 50%;
+    left: 45%;
     margin-top:-100px;
     margin-left: -70px;
+    width: 100%;
+}
+.loginbox h3{
+    margin-left: 2.5em;
 }
 
 .loginbox form{
     margin:auto;
     margin-top: 20px;
-    display: inline-block;
+    display: block;
     margin-left: -60px;
 }
 .loginbox .lower{
     font-size: 0.3em;
-    /*margin-top: 4em;*/
 }
 .loginbox .lower label{
     z-index: 1000;
 }
 
-
-.logcontainer input[type=text], input[type=password] {
+.loginbox  input[type=text], input[type=password] {
     margin-top: 20px;    
     display: block;
+    width: 29%;
+    max-width: 300px;  
 }
 
 .logbutton {
     background-color:rgb(68,68,68); 
     border: none;
     color: white;
-    padding: 10px 68px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -47,6 +51,8 @@
     cursor: pointer;
     -webkit-transition:background-color .5s;
     transition:background-color .5s;
+    width: 29%;
+    max-width: 300px;
 }
 .logbutton:hover {
     background-color:#E52952;

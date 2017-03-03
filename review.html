@@ -9,46 +9,47 @@
 	<!-- link my grid styleguide -->
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css" >
 	<link rel="stylesheet" type="text/css" href="css/homepage.css" >
+	<link rel="stylesheet" type="text/css" href="css/shopping.css" >
 	<link rel="stylesheet" type="text/css" href="css/login.css" >
 </head>
 	<body>
 			<!-- main navigation -->
-	<div class="backgroundContainer">
-		<div class="flexContainer">
-			<div class="productBtnBox">
-				<div id="productBtn" onclick="toggleProductListPanel('productListPanel')">
-			 		<span>... <br> ... <br> ... </span> 
 
-			 	</div>
-			 	<span class="bold">PRODUCTS</span>
-			 </div>
+	<div class="flexContainer">
+		<div class="productBtnBox">
+			<div id="productBtn" onclick="toggleProductListPanel('productListPanel')">
+		 		<span>... <br> ... <br> ... </span> 
 
-			  <a href="index.html" class="logobox">
-			 	<img src="img/logo.png" alt="logo">	
-			 </a>
+		 	</div>
+		 	<span class="bold">PRODUCTS</span>
+		 </div>
 
-			 <div class="nav">	
-		
-				<div class="boxLong">
-					<a href="about.html"> ABOUT </a>
-				</div>
-				<div class="boxShort">
-					<a href="login.html"> LOGIN</a>
-				</div>
-				<div class="boxSearch">
-					<form>
-					 <input id="search" name="search" type="text">
-					 <input id="search_submit" value="search" type="submit">
-					<!-- <img src="img/search.png" alt="search button"> -->
-					</form>
-				</div>
+		  <a href="index.html" class="logobox">
+		 	<img src="img/logo.png" alt="logo">	
+		 </a>
 
-				<a href="shopping.html" class="boxShop">
-					<img src="img/shoppingbg.png" alt="shopping bag">
-				</a>
-				
+		 <div class="nav">	
+	
+			<div class="boxLong">
+				<a href="about.html"> ABOUT </a>
 			</div>
+			<div class="boxShort">
+				<a href="login.html"> LOGIN</a>
+			</div>
+			<div class="boxSearch">
+				<form>
+				 <input id="search" name="search" type="text">
+				 <input id="search_submit" value="search" type="submit">
+				<!-- <img src="img/search.png" alt="search button"> -->
+				</form>
+			</div>
+
+			<a href="shopping.html" class="boxShop">
+				<img src="img/shoppingbg.png" alt="shopping bag">
+			</a>
+			
 		</div>
+	</div>
 
 			<!-- toggle panel -->
 	<div id="productListPanel">
@@ -91,31 +92,18 @@
 		</div>
 	</div>
 
-
-		<div class="loginbox">
-			<h3>LOGIN</h3>
-			<form>
-
-			 
-			    <input type="text" placeholder="Email" name="uname" >
-
-			    <input type="password" placeholder="Password" name="psw">
-			        
-			<div class="lower">
-				<label> Forgot your password?	
-				</label>
-			</div>	
-			<button class="logbutton">LOG IN</button>
-
-			</form>
-		</div>
+	<div class="shopping-cart">
+		<a href="shopping.html"><h3>SHOPPING CART</h3></a>
+		<a href="payment.html"><h3>&#47;CHECKOUT</h3></a>
+		<a href="review.html" id="shopping-title"><h3>&#47;REVIEW&#47;</h3></a>
+		<h3>COMPLETE</h3>
 
 	</div>
 
-		<div id="coverPanel">
+	<div id="coverPanel">
 
-		</div>
-		<script type="text/javascript" src="js/script.js"></script>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
 		
 	</body>
 </html>
