@@ -166,23 +166,27 @@ a .logbutton{
 }
 .checkout-process .text-input{
   display: block;
-  margin:4%;
+  margin:4% 0;
 }
+
 .checkout-process{
-  background-color: #f0f0f0;
+  /*background-color: #f0f0f0;*/
   text-align: left;
   margin: 2% 4%;
   padding: 10px;
   width: 60%;
 
 }
+.flexContainer h3{
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 8%;
+}
+
 .checkout-process label{
   color: black;
   clear: both;
-}
-
-.checkout-process form{
-
 }
      
 .checkout-process input[type=text], select{
@@ -193,9 +197,6 @@ a .logbutton{
   float: right;
 }
 
-.checkout-process input[id="date"]{
-  width: 70%;
-}
 
 /*.checkout-process .text-input.mail {
   padding-bottom: 50px;
@@ -203,22 +204,30 @@ a .logbutton{
 }*/
 
 .checkout-summary{
-  background-color: #f0f0f0;
-  margin: 2% 4%;
+  /*background-color: #f0f0f0;*/
+  margin: 2% 2%;
   text-align: left;
   height: auto;
-  max-height: 50vh;
+  max-height: 60vh;
+  padding-left: 50px;
+  border-left: 1px solid #ccc;
+  box-sizing: border-box;
+
 }
 
 .summary {
   width: 100%;
+  margin-top: 7%;
 
+}
+.summary h3{
+  width: 80%;
 }
 .summary .total-item {
   float: left;
   clear: both;
   width: 100%;
-  margin: 20px ;
+  margin: 20px 0;
 }
 
  .summary .total-item label{
@@ -234,7 +243,7 @@ a .logbutton{
 }
 .summary  #cart-shipping{
   padding-bottom: 30px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
   box-sizing: border-box;
 
 }
@@ -245,8 +254,8 @@ a .logbutton{
 a .logbutton#paysubmit{
   float: none;
   min-width: 80%;
-  margin: 0px 7%;
 }
+
 /*confirmation page*/
  
 .confirmation{
@@ -265,6 +274,8 @@ a .logbutton#home{
   left: 50%;
   margin: 0px 45%;
 }
+
+
 
 
 
