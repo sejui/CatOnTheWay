@@ -247,6 +247,24 @@ a .logbutton#paysubmit{
   min-width: 80%;
   margin: 0px 7%;
 }
+/*confirmation page*/
+ 
+.confirmation{
+  text-align: center;
+}
+.confirmation h3{
+  margin-top: 50px;
+  color: #E52952;
+}
+
+a .logbutton#home{
+  float: none;
+  width: 10%;
+
+  top: 50%;
+  left: 50%;
+  margin: 0px 45%;
+}
 
 
 
