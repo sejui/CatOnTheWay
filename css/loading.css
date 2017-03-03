@@ -1,0 +1,287 @@
+#loading{
+	width:200px;
+	height: 200px;
+
+	/* for browser that don't support gradient */
+	background:#B7C1EA;
+	/* gradient color */
+	background:-webkit-linear-gradient(#B7C1EA, #C3ABC7);
+	background: -moz-linear-gradient(#B7C1EA, #C3ABC7); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#B7C1EA, #C3ABC7);
+	background-repeat: no-repeat;
+
+	border-radius:50%; /*make it circle*/
+	text-align: center;
+
+	position: absolute;
+	top:30%;
+	left: 40%;
+
+
+
+}
+
+#loading h2{
+	font-family: gravity-book;
+	color:white;
+	padding-top:35%;
+
+}
+
+#rocket{
+	background-image: url("../img/loading.png");
+	background-repeat: no-repeat;
+	background-size:80px auto;
+	width:80px;
+	height:50px;
+	position: absolute;
+	left:30%;         
+	top:-6%;
+	z-index: 1000;
+
+	/* play animation of self rotating */
+	-ms-animation-name:rotate;
+	-ms-animation-duration:6s;
+	/*-ms-animation-timing-function: linear;*/
+	-ms-animation-iteration-count: infinite;
+
+	-moz-animation-name:rotate;
+	-moz-animation-duration:6s;
+	/*-moz-animation-timing-function: linear;*/
+	-moz-animation-iteration-count: infinite;
+
+	-webkit-animation-name:rotate;
+	-webkit-animation-duration:6s;
+	/*-webkit-animation-timing-function: linear;*/
+	-webkit-animation-iteration-count: infinite;
+
+				
+	animation-name:rotate;
+	animation-duration:6s;
+	/*animation-timing-function: linear;*/
+	animation-iteration-count: infinite;
+
+}
+
+/* animation for rocket to rotate */
+@-ms-keyframes rotate{
+	0%{-ms-transform:rotate(0deg); 
+	   -ms-transform-origin: 50% 225%;}
+	25%{-ms-transform:rotate(90deg); 
+		-ms-transform-origin: 45% 230%;}
+	50%{-ms-transform:rotate(180deg); 
+		-ms-transform-origin: 50% 225%;}
+	75%{-ms-transform:rotate(270deg); 
+		-ms-transform-origin: 50% 225%;}
+	100%{-ms-transform:rotate(360deg); 
+		-ms-transform-origin: 50% 225%;
+		}
+}
+@-moz-keyframes rotate{
+	0%{-moz-transform:rotate(0deg); 
+	   -moz-transform-origin: 50% 225%;}
+	25%{-moz-transform:rotate(90deg); 
+		-moz-transform-origin: 45% 230%;}
+	50%{-moz-transform:rotate(180deg); 
+		-moz-transform-origin: 50% 225%;}
+	75%{-moz-transform:rotate(270deg); 
+		-moz-transform-origin: 50% 225%;}
+	100%{-moz-transform:rotate(360deg); 
+		-moz-transform-origin: 50% 225%;
+		}
+}
+@-webkit-keyframes rotate{
+	0%{-webkit-transform:rotate(0deg); 
+	   -webkit-transform-origin: 50% 225%;}
+	25%{-webkit-transform:rotate(90deg); 
+		-webkit-transform-origin: 45% 230%;}
+	50%{-webkit-transform:rotate(180deg); 
+		-webkit-transform-origin: 50% 225%;}
+	75%{-webkit-transform:rotate(270deg); 
+		-webkit-transform-origin: 50% 225%;}
+	100%{-webkit-transform:rotate(360deg); 
+		-webkit-transform-origin: 50% 225%;
+		}
+}
+@keyframes rotate{
+	0%{transform:rotate(0deg); 
+	   transform-origin: 50% 225%;}
+	25%{transform:rotate(90deg); 
+		transform-origin: 45% 230%;}
+	50%{transform:rotate(180deg); 
+		transform-origin: 50% 225%;}
+	75%{transform:rotate(270deg); 
+		transform-origin: 50% 225%;}
+	100%{transform:rotate(360deg); 
+		transform-origin: 50% 225%;
+		}
+}
+
+
+
+
+
+
+
+
+/* animation for breathable stars */
+
+@-ms-keyframes breath{   /* for IE */
+	0% {-ms-opacity:1;}
+	30%{-ms-opacity:0;}
+	100%{-ms-opacity:1;}
+}
+
+@-moz-keyframes breath{  /* for fireFox */
+	0% {-moz-opacity:1;}
+	30%{-moz-opacity:0;}
+	100%{-moz-opacity:1;}
+}
+
+@-webkit-keyframes breath{  
+	0% {-webkit-opacity:1;}
+	30%{-webkit-opacity:0;}
+	100%{-webkit-opacity:1;}
+}
+
+@keyframes breath{
+	0% {opacity:1;}
+	30%{opacity:0;}
+	100%{opacity:1;}
+}
+
+
+.breathStars1{
+	width:20px;
+	height:20px;
+	border-radius: 50%;
+	background:white;
+
+	position:relative;
+	left:10%;
+	top:-20%;
+	/* play animation */
+    -ms-animation-name:breath;
+    -ms-animation-duration: 4s;
+	-ms-animation-iteration-count: infinite; /*continue to play the animation*/
+
+    -moz-animation-name:breath;
+    -moz-animation-duration: 4s;
+	-moz-animation-iteration-count: infinite;
+
+    -webkit-animation-name:breath;
+    -webkit-animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;		
+
+    animation-name:breath;
+    animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+.breathStars2{
+	width:10px;
+	height:10px;
+	border-radius: 50%;
+	background:white;
+
+	position:relative;
+	left:60%;
+	top:-70%;
+	/* play animation */
+    -ms-animation-name:breath;
+    -ms-animation-duration: 3s;
+	-ms-animation-iteration-count: infinite;
+
+    -moz-animation-name:breath;
+    -moz-animation-duration: 3s;
+	-moz-animation-iteration-count: infinite;
+
+    -webkit-animation-name:breath;
+    -webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;		
+
+    animation-name:breath;
+    animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+.breathStars3{
+	width:5px;
+	height:5px;
+	border-radius: 50%;
+	background:white;
+
+	position:relative;
+	left:30%;
+	top:-10%;
+
+	/* play animation */
+    -ms-animation-name:breath;
+    -ms-animation-duration: 2s;
+	-ms-animation-iteration-count: infinite;
+
+    -moz-animation-name:breath;
+    -moz-animation-duration: 2s;
+	-moz-animation-iteration-count: infinite;
+
+    -webkit-animation-name:breath;
+    -webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;		
+
+    animation-name:breath;
+    animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+.breathStars4{
+	width:10px;
+	height:10px;
+	border-radius: 50%;
+	background:white;
+
+	position:relative;
+	left:60%;
+	top:-10%;
+
+	/* play animation */
+    -ms-animation-name:breath;
+    -ms-animation-duration: 6s;
+	-ms-animation-iteration-count: infinite;
+
+    -moz-animation-name:breath;
+    -moz-animation-duration: 6s;
+	-moz-animation-iteration-count: infinite;
+
+    -webkit-animation-name:breath;
+    -webkit-animation-duration: 6s;
+	-webkit-animation-iteration-count: infinite;		
+
+    animation-name:breath;
+    animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+.breathStars5{
+	width:5px;
+	height:5px;
+	border-radius: 50%;
+	background:white;
+
+	position:relative;
+	left:80%;
+	top:-50%;	
+
+	/* play animation */
+    -ms-animation-name:breath;
+    -ms-animation-duration: 3s;
+	-ms-animation-iteration-count: infinite;
+
+    -moz-animation-name:breath;
+    -moz-animation-duration: 3s;
+	-moz-animation-iteration-count: infinite;
+
+    -webkit-animation-name:breath;
+    -webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;		
+
+    animation-name:breath;
+    animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
