@@ -245,12 +245,12 @@ ol{
 }
 
 nav{
-	width:70%;
+	width:100%;
 	margin:0;
 
 }
 .boxLong a, .boxShort a{
-	font-family: gravity-book;
+	font-family: "gravity-book";
 }
 
 /*search function*/
@@ -264,25 +264,28 @@ nav{
   height: 28px;
   font-size: 1.3em;
   display: inline-block;
-  font-family: "gravity";
   border: none;
   outline: none;
   color: black;
   padding: 10px;
-  width: 0px;
+  width: 0;
+  right: 25%;
   position: absolute;
   background: none;
   z-index: 3;
   transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  /*transition: height 0.2s ease-out 0.5s , top 0.2s ease-out 0.5s, padding 0.2s ease-out 0.5s, width 0.3s ease-out 0.2s;*/
+
   cursor: pointer;
 }
 .boxSearch input[type="text"]:focus:hover {
-  border-bottom: 1px solid black;
+  border: 1px solid black;
 }
 .boxSearch input[type="text"]:focus {
-  width: 90%;
+  width: 70%;
   z-index: 1;
-  border-bottom: 1px solid black;
+  border: 1px solid black;
+  /*margin-top: 1.2em;*/
   cursor: text;
 }
 .boxSearch input[type="submit"] {
@@ -294,7 +297,7 @@ nav{
 	position: absolute;
 	border: none;
 	text-indent: -10000px;
-    /*right: 0;*/
+    right: 25%;
 	z-index: 2;
 	opacity: 0.4;
 	cursor: pointer;

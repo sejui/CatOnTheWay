@@ -2,6 +2,8 @@
 	font-size: 1.3em;
 	/*font-weight: bold;*/
 	font-family: "gravity-bold";
+  display: inline-block;
+  color: #eee;
 }
 
 .shopping-cart{
@@ -114,10 +116,6 @@ label{
   margin-left: 1em;
 }
 
-.product .product-removal {
-	   
-}
-
 .product .remove-product {
   border: 0;
   padding: 4px 8px;
@@ -155,12 +153,136 @@ label{
 }
 .total .grand-total label, .total .grand-total .total-value{
 	font-size: 1.2em;
-    font-family: "gravity-bold";
+  font-family: "gravity-bold";
 }
-.logbutton{
+a .logbutton{
 	float: right;
-	width: 24%;
+	max-width: 24%;
 }
+
+/*payment page*/
+.shopping-cart #shopping-title h3{
+  color: black;
+}
+.checkout-process .text-input{
+  display: block;
+  margin:4% 0;
+}
+
+.checkout-process{
+  /*background-color: #f0f0f0;*/
+  text-align: left;
+  margin: 2% 4%;
+  padding: 10px;
+  width: 60%;
+
+}
+.flexContainer h3{
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 8%;
+}
+
+.checkout-process label{
+  color: black;
+  clear: both;
+}
+     
+.checkout-process input[type=text], select{
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  width: 80%;
+  padding: 3px 1px;
+  float: right;
+}
+
+
+/*.checkout-process .text-input.mail {
+  padding-bottom: 50px;
+  border-bottom: 1px solid black;
+}*/
+
+.checkout-summary{
+  /*background-color: #f0f0f0;*/
+  margin: 2% 2%;
+  text-align: left;
+  height: auto;
+  max-height: 60vh;
+  padding-left: 50px;
+  border-left: 1px solid #ccc;
+  box-sizing: border-box;
+
+}
+
+.summary {
+  width: 100%;
+  margin-top: 7%;
+
+}
+.summary h3{
+  width: 80%;
+}
+.summary .total-item {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin: 20px 0;
+}
+
+ .summary .total-item label{
+  color: black;
+   text-align: left;
+   width: 20%;
+}
+.summary .total-item .total-value{
+  text-align: right;
+  width: 80%;
+  margin-top: -20px;
+
+}
+.summary  #cart-shipping{
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+
+}
+
+.summary #cart-total{
+  font-family: "gravity-bold";
+}
+a .logbutton#paysubmit{
+  float: none;
+  min-width: 80%;
+}
+
+/*confirmation page*/
+ 
+.confirmation{
+  text-align: center;
+}
+.confirmation h3{
+  margin-top: 50px;
+  color: #E52952;
+}
+
+a .logbutton#home{
+  float: none;
+  width: 10%;
+
+  top: 50%;
+  left: 50%;
+  margin: 0px 45%;
+}
+
+
+
+
+
+
+
+
+
 
 
 
