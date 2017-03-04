@@ -1,17 +1,5 @@
 
-.homepageBg{
-	/* for browser that don't support gradient */
-	background:#B7C1EA;
-	/* gradient color */
-	background:-webkit-linear-gradient(#B7C1EA, #C3ABC7);
-	background: -moz-linear-gradient(#B7C1EA, #C3ABC7); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#B7C1EA, #C3ABC7);
-	background-repeat: no-repeat;
-	
-	width:100vw;
-	height:100vh;
-	/*border: solid;*/
-}
+
 .home-text{
     position: absolute;
     height: 200px;
