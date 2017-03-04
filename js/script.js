@@ -1,3 +1,5 @@
+"use strict";
+
 
 // toggel productlist 
 function toggleProductListPanel(x){

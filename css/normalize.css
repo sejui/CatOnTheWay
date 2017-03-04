@@ -141,12 +141,12 @@ a .btn:hover{
 
 #productBtn{
 	margin-left: 2em;
-	padding: .1em 1em .1em .8em;
+	padding: 0em 0em 0em .6em;
 	border:solid 1px rgb(68,68,68);
-	width:3em;
-	height:3em;
+	width:2.5em;
+	height:2.5em;
 	display: inline-block;
-	line-height:80%;
+	line-height:60%;
 	letter-spacing: 2px;
 	/* make color transition*/
 	-webkit-transition:border-color .5s;
@@ -165,6 +165,18 @@ a .btn:hover{
 }
 #productBtn:hover span{
 	color:rgb(150,150,150);
+}
+
+.product{
+	font-size:.8em;
+	cursor:pointer;
+
+	-webkit-transition:color .5s;
+	transition:color .5s;	
+}
+
+.product:hover{
+	color:rgb(100,100,100);
 }
 
 .closeProductListBtn{
@@ -256,7 +268,7 @@ nav{
 /*search function*/
 
 .boxShop img{
-	max-width: 20%;
+	max-width: 17%;
 	float: left;
 }
 
@@ -321,8 +333,8 @@ nav{
 
 .logobox img{
 	width: 30%;
-	margin-left: 7em;
-	margin-top: 1em;
+	margin-left: 40%;
+	margin-top: 3%;
 
 }
 
