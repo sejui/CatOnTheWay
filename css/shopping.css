@@ -8,11 +8,12 @@
 
 .shopping-cart{
 	width: 90%;
+    margin: 1em 3em;
 }
 
 .product-image {
   float: left;
-  width: 38%;
+  width: 30%;
 }
 
 .product-details {
@@ -37,8 +38,13 @@
 }
 
 .product-removal {
-  float: left;
-  width: 10%;
+  float: right;
+  width: 18%;
+}
+.homepageBg.bg1{
+overflow: visible;
+overflow-x: hidden;
+height: 160vh
 }
 
 
@@ -68,22 +74,26 @@
   content: '$';
 }
 
-.shopping-cart{
-	margin: 2em 3em;
+/*.shopping-cart p{
+  font-size: 1.3em;
+
+}*/
+.product {
+  font-size: 1.2em;
 }
 
 /* Column headers */
 label{
 	font-size: 1em;
-	color: #aaa;
+	color: rgb(68,68,68);
 	margin-top: 1em;
 	font-family: "gravity-light";
 
 }
 
 .column-labels label {
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
   border-bottom: 1px solid #eee;
 
 }
@@ -94,8 +104,8 @@ label{
 
 /* Product entries */
 .product {
-  margin-bottom: 20px;
-  padding-bottom: 10px;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
   border-bottom: 1px solid #eee;
 }
 
@@ -110,6 +120,10 @@ label{
 .product .product-details .product-description {
   margin: 5px 0px;
 }
+.product-details .product-title{
+  font-family: "gravity-bold";
+  font-size: 1.35em;
+}
 
 .product .product-quantity input {
   width: 50px;
@@ -122,7 +136,7 @@ label{
   background-color: #E52952;
   color: #fff;
   font-size: 12px;
-  margin-left: 4em;
+  margin-left: 8em;
   margin-right: auto;
   -webkit-transition:background-color .5s;
   transition:background-color .5s;
@@ -155,10 +169,12 @@ label{
 	font-size: 1.2em;
   font-family: "gravity-bold";
 }
-a .logbutton{
+a .button-container{
 	float: right;
-	max-width: 24%;
+	width: 25%;
+  font-size: 1em;
 }
+
 
 /*payment page*/
 .shopping-cart #shopping-title h3{
@@ -166,7 +182,7 @@ a .logbutton{
 }
 .checkout-process .text-input{
   display: block;
-  margin:4% 0;
+  margin:5% 0;
 }
 
 .checkout-process{
@@ -178,10 +194,10 @@ a .logbutton{
 
 }
 .flexContainer h3{
-  padding-bottom: 20px;
+  padding-bottom: 1em;;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
-  margin-bottom: 8%;
+  margin-bottom: 5%;
 }
 
 .checkout-process label{
@@ -192,7 +208,7 @@ a .logbutton{
 .checkout-process input[type=text], select{
   border: 1px solid #ccc;
   box-sizing: border-box;
-  width: 80%;
+  width: 100%;
   padding: 3px 1px;
   float: right;
 }
@@ -212,7 +228,7 @@ a .logbutton{
   padding-left: 50px;
   border-left: 1px solid #ccc;
   box-sizing: border-box;
-
+  margin-top: -36%;
 }
 
 .summary {
@@ -251,7 +267,7 @@ a .logbutton{
 .summary #cart-total{
   font-family: "gravity-bold";
 }
-a .logbutton#paysubmit{
+a .button-container#paysubmit{
   float: none;
   min-width: 80%;
 }
@@ -266,14 +282,89 @@ a .logbutton#paysubmit{
   color: #E52952;
 }
 
-a .logbutton#home{
+a .button-container#home{
   float: none;
-  width: 10%;
-
+  width: 20%;
   top: 50%;
-  left: 50%;
-  margin: 0px 45%;
+  /*left: 50%;*/
+  margin: 0px 40%;
 }
+
+
+/*reponsive shopping page*/
+@media screen and (max-width: 48rem){
+  .shopping-cart{
+    height: 100%;
+    width: 100%;
+  }
+  .column-labels{
+    text-indent:-999999px;
+  }
+  .column-labels label{
+    display: none;
+  }
+  .product .product-image{
+    width: 100%;
+    
+  }
+  .product .product-image img{
+    float: left;
+    margin-left: 5%;
+  }
+  .product-details{
+    float: right;
+    top: 0;
+    margin-top: -40%;
+    margin-right: 20%;
+  }
+  .product .product-details .product-description{
+    margin: 15% 0px
+  }
+  .product-price{
+    text-indent:-999999px;
+  }
+  .product-quantity{
+    float: right;
+    margin-top: -25%;
+    margin-right: 30%;
+  }
+  .product-line-price{
+    float: right;
+    margin-top: -20%;
+    margin-right: 30%;
+    font-size: 1.4em;
+  }
+  .product-removal{
+    float: left;
+  /*  margin-left: 2%;*/
+    position: relative;
+  }
+  .total .total-item label{
+    float: none;
+  }
+  .total .total-item .total-value{
+    text-align: left;
+    margin-top: 0em;
+    margin-right: 3em;
+  }
+  a .button-container{
+    float: none;
+    width: 85%;
+    /*margin-right: 5%;*/
+  }
+  .flexContainer .flexcon{
+    display: inline-block;
+  }
+  .checkout-process{
+    width: 100%;
+  }
+  .product .remove-product{
+    margin-left: 5em;
+  }
+}
+
+
+
 
 
 

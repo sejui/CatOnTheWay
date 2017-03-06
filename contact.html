@@ -11,13 +11,15 @@
 	<link rel="stylesheet" type="text/css" href="css/homepage.css" >
 	<link rel="stylesheet" type="text/css" href="css/shopping.css" >
 	<link rel="stylesheet" type="text/css" href="css/about.css" >
-	<link rel="stylesheet" type="text/css" href="css/login.css" >
+	<!-- <link rel="stylesheet" type="text/css" href="css/login.css" > -->
+	<meta name="viewport" content="width=device-width" />
+
 </head>
 	<body>
 			<!-- main navigation -->
 
 
-    <div class="backgroundContainer">
+    <div class="homepageBg bg ">
 		<div class="flexContainer">
 			<div class="productBtnBox">
 				<div id="productBtn" onclick="toggleProductListPanel('productListPanel')">
@@ -100,6 +102,8 @@
 
 
 		<div class="checkout-process contactwrap">
+
+		<div class="contactpart">
 			<h3>CONTACT US</h3>	
 			<div class="process">
 			<form>
@@ -120,34 +124,72 @@
 					<input id="comment" type="text">
 				</div>
 
-			</form>				
-			</div>
+			</form>	
 
-			<div class="cbutton">
-				<a href="contact.html">
-			   	<button class="logbutton" id="contactbutton">Reset</button>	
-			   	</a>
+				<div class="cbutton">
+	<!-- 				<a href="contact.html">
+				   	<button class="button-container" id="contactbutton">Reset</button>	
+				   	</a> -->
 
-			   	<button class="logbutton" id="contactbutton2">Submit</button>
+				   	<button class="button-container" id="contactbutton2">Submit</button>
 
-			   	<div id="open" class="openb">
+				   	<div id="open" class="openb">
 
-				  <div class="button-content">
-				    <span class="close">&times;</span>
-				    <div class="button-content1">
-				    <h3>Thank you for getting in touch!</h3>
-				    <p>We appreciate you contacting us. We try to respond as soon as possible, so one of our Customer Service colleagues will get back to you within a few hours.</p>
-				    <a href="index.html">
-				    <button class="logbutton" id="paysubmit">Home</button>	
-				    </a>
-				    </div>
+					  <div class="button-content">
+					    <span class="close">&times;</span>
+					    <div class="button-content1">
+					    <h3>Thank you for getting in touch!</h3>
+					    <p>We appreciate you contacting us. We try to respond as soon as possible, so one of our Customer Service colleagues will get back to you within a few hours.</p>
+					    <a href="index.html">
+					    <button class="button-container" id="paysubmit">Home</button>	
+					    </a>
+					    </div>
 
-				  </div>
+					  </div>
 
+					</div>
+
+				   
+			   	</div>			
+		    </div>
+		</div>
+
+
+
+			<div class="info-detail">
+				<h3>OTHER WAY TO CONTACT</h3>
+				<div class="allicon">
+					<div class="icon1">
+						<a href="#">
+						<img src="img/email.png">
+						</a>
+						<p>catontheway_Service@gmail.com</p> 
+					</div>
+					<div class="icon2">
+						<a href="#">
+						<img src="img/chat.png">
+						</a>
+						<a href="#">
+						<p>Chat Now</p>
+						</a>
+					</div>
 				</div>
-
-			   
-		   	</div>
+				<div class="allicon">
+					<div class="icon1">
+						<a href="#">
+						<img src="img/phone.png">
+						</a> 
+						<p>888-888-8888</p>
+					</div>
+					<div class="icon1">
+						<a href="https://www.google.ca/maps/place/Simon+Fraser+University+Surrey/@49.1870185,-122.8476715,16.95z/data=!4m5!3m4!1s0x0:0x27cc0a8105206a6c!8m2!3d49.1876326!4d-122.8495261?hl=en&authuser=0">
+						<img src="img/location.png">
+						<p>Location</p>
+						</a> 
+					</div>
+				</div>
+				
+			</div>
 
 		</div>
 
