@@ -4,229 +4,297 @@
 	<title>Bagpack</title>
 	<!-- link my normalize styleguide -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" >
+	<link rel="stylesheet" type="text/css" href="css/homepage.css" >
 	<!-- link my grid styleguide -->
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css" >
-	<link rel="stylesheet" type="text/css" href="css/product.css" >		
+	<!-- link my styleguide specific for this page -->
+	<link rel="stylesheet" type="text/css" href="css/product.css" >	
+	<!--  link my animation styleguide for loading sequence and fadein effect -->
+	<link rel="stylesheet" type="text/css" href="css/loading.css" >	
+	<link rel="stylesheet" type="text/css" href="css/fadeinAnimation.css" >	
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
-	<div id="topNav">
+	<!-- loading animation -->
+	<div id="loading">
+		<div id="rocket"></div>
+		<h2>loading</h2>
+		<div class="breathStars1"></div>
+		<div class="breathStars2"></div>
+		<div class="breathStars3"></div>
+		<div class="breathStars4"></div>
+		<div class="breathStars5"></div>
+	</div>
+
+	<div id="hideAll"> <!-- this div hides all content and will only show centent when page is loaded -->
 		<div class="flexContainer">
-			<div class="box-flex8">
-				<a href="index.html" class="topLogo">Cat On The Way</a>
-			</div>
-			<div class="box-flex4 topNavSection">
-				<div class="box-flex2">
-					<div>
-				 	<a href="#overview">Overview</a>
-					</div>
-					<div>
-				 	<a href="#feature">Feature</a>
-				 	</div>
-				 	<div>
-				 	<a href="shopping.html" class="buyBtn">Buy</a>
-				 	</div>
-				</div>	
-				<!-- this empty div is for grid use purpose -->
-				<div class="box-flex2"></div> 
-											
-			</div>
-		</div>
-	</div>
-	<div id="overview">
-		<div class="price">
-			
-				<img class="productImg" src="img/backpack7.jpg" alt="">
-			
-			
+			<div class="productBtnBox">
+				<div id="productBtn" onclick="toggleProductListPanel('productListPanel')">
+			 		<span>... <br> ... <br> ... </span> 
 
-			<div class=" productoverview">
-				<h2>CAT CARRIER</h2>
-				<p>
-					Mobile pet bed, in-cabin airplane carrier, and car seat all in one(please check airline restrictions before purchase). Adjustable backpack straps and carrying handle make our carrier easy to attach to a seatbelt.
-				</p>
-				<div class="information">
-					<span onclick="toggleInfo('info')"> more info</span>
-					<ul id="info">
-						<li>Dimensions: 13.6"L x 11.4"W x 16.5"H </li>
-						<li>Diameter of Window: 5.9"; </li>
-						<li>Non-toxic materials: Cotton, ABS, PC, Polyester. </li>
-						<li>Semisphere material: Hand washable in warm water. </li>
-						<li>Carrier weight: 4.1 pounds. </li>
-						<li>Shipping Weight: 5.3 pounds. </li>
-						<li>Fits pets up to 16 pounds. </li>
-					</ul>
+			 	</div>
+			 	<span class="bold product" onclick="toggleProductListPanel('productListPanel')">PRODUCTS</span>
+			 </div>
+
+			 
+			 
+			 <a href="index.html" class="logobox">
+				 <img src="img/logo.png" alt="logo">	
+			 </a>
+			 <div class="nav">	
+				<div class="boxLong">
+					<a href="about.html"> ABOUT </a>
 				</div>
-				<div class="price_buyBtn">
-					<span>$290</span> 
-					<a href="shopping.html" ><div class="btn">BUY</div></a>
+				<div class="boxShort">
+					<a href="login.html"> LOGIN</a>
+				</div>
+				<div class="boxLong">
+					<a href="contact.html"> CONTACT</a>
+				</div>
+				<div class="boxSearch">
+					<form>
+					 <input id="search" name="search" type="text">
+					 <input id="search_submit" value="search" type="submit">
+					<!-- <img src="img/search.png" alt="search button"> -->
+					</form>
 				</div>
 
-			</div>
-
-		</div>
-	</div>
-
-
-	<div id="overview2">
-		<div class=" flexContainer">
-		<!-- this empty div is for grid use purpose -->
-		<div class="box-flex8">
-			<p class="overview2Content">
-				Want to explore the world with your cat?
+				<a href="shopping.html" class="boxShop">
+					<img src="img/shoppingbg.png" alt="shopping bag">
+				</a>
 				
-			</p>
-
-			<p class="overview2Content">
-				Good for hiking, travel and ourdoor activities.
-			</p>
-
-		</div>
-	
-		<div class="box-flex4"></div>
-		</div>
-	</div>	
-
-	<div id="feature" class="feature">
-		<h1>FEATURE</h1>
-		<div class="flexContainer">
-			<div class="box-flex6">
-				<img src="img/backpack2.jpg" alt="bagpack2">
 			</div>
-			<div class="box-flex6">
-				<div class="featureContent">
-					<h2>Bubble Window</h2>
-					<!-- the abstract color bar -->
-					<div class="colorBar"></div>
-					<p class="productDetail">
-						Double Breathable Mesh and Transparent
-
-						Semi-sphere Window Design.It’a changeable
-
-						depends on different weather. The window
-
-						design provides your pet a more interesting
-
-						and safe space, stop your pet from escaping,
-
-						which allows your pets to enjoy the sunshine
-
-						and scenery with you and interact with the
-
-						outside world. More important is that allows
-
-						you check up on them easily.
-
-					</p>
+		</div>
+	<!-- 	<div id="topNav">
+			<div class="flexContainer">
+				<div class="box-flex8">
+					
+				</div>
+				<div class="box-flex4 topNavSection">
+					<div class="box-flex2">
+						<div>
+					 	<a href="#overview">Overview</a>
+						</div>
+						<div>
+					 	<a href="#feature">Feature</a>
+					 	</div>
+					 	<div>
+					 	<a href="shopping.html" class="buyBtn">Buy</a>
+					 	</div>
+					</div> -->	
+					<!-- this empty div is for grid use purpose -->
+	<!-- 				<div class="box-flex2"></div> 
+												
 				</div>
 			</div>
-		</div>
-	</div>
+		</div> -->
 
-	<div class="feature">
-		<div class="flexContainer">
-			<div class="box-flex6">
-				<img src="img/backpack3.jpg" alt="bagpack2">
-			</div>
-			<div class="box-flex6">
-				<div class="featureContent">
-					<h2>In Airplane Carrier / Car Seat All in One</h2>
-					<!-- the abstract color bar -->
-					<div class="colorBar"></div>
-					<p class="productDetail">
-						Double Breathable Mesh and Transparent
-						Mobile pet bed, in-cabin airplane carrier, and
 
-						car seat all in one. Adjustable backpack straps
+		<div id="overview">
+			<div class="price">
+				
+				<img class="productImg" src="img/backpack7.jpg" alt="">
+				
+				
 
-						and carrying handle make our carrier easy to
-
-						attach to a seatbelt.
-
+				<div class=" productoverview">
+					<h2>CAT CARRIER</h2>
+					<p>
+						Mobile pet bed, in-cabin airplane carrier, and car seat all in one(please check airline restrictions before purchase). Adjustable backpack straps and carrying handle make our carrier easy to attach to a seatbelt.
 					</p>
+					<div class="information">
+						<span onclick="toggleInfo('info')"> more info</span>
+						<ul id="info">
+							<li>Dimensions: 13.6"L x 11.4"W x 16.5"H </li>
+							<li>Diameter of Window: 5.9"; </li>
+							<li>Non-toxic materials: Cotton, ABS, PC, Polyester. </li>
+							<li>Semisphere material: Hand washable in warm water. </li>
+							<li>Carrier weight: 4.1 pounds. </li>
+							<li>Shipping Weight: 5.3 pounds. </li>
+							<li>Fits pets up to 16 pounds. </li>
+						</ul>
+					</div>
+					<div class="price_buyBtn">
+						<span>$290</span> 
+						<a href="shopping.html" ><div class="btn">BUY</div></a>
+					</div>
+
 				</div>
-			</div>
-		</div>
-	</div>	
 
-	<div class="feature">
-		<div class="flexContainer">
-			<div class="box-flex6">
-				<img src="img/backpack5.jpg" alt="bagpack5">
-			</div>
-			<div class="box-flex6">
-				<div class="featureContent">
-					<h2>Design for Convenience and Safty</h2>
-					<!-- the abstract color bar -->
-					<div class="colorBar"></div>
-					<p class="productDetail">
-						Dimensions: 13.6"L x 11.4"W x 16.5"H <br/>
-						Built-in security leash, mesh panels and ventila-
-						tion holes, soft washable pad, top and side
-
-						entries for maximum accessibility, foldable flat
-
-						for easy storage and travel - all for comfort,
-
-						convenience and safety.
-
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="feature">
-		<div class="flexContainer">
-			<div class="box-flex6">
-				<img src="img/backpack6.jpg" alt="bagpack6"> 
-			</div>
-			<div class="box-flex6">
-				<div class="featureContent">
-					<h2>Specification</h2>
-					<!-- the abstract color bar -->
-					<div class="colorBar"></div>
-					<p class="productDetail">
-						Dimensions: 13.6"L x 11.4"W x 16.5"H <br/>
-
-						Diameter of Window: 5.9";<br/>
-
-						Non-toxic materials: Cotton, ABS, PC, Polyester.<br/>
-
-						Semisphere material: Hand washable in warm water.<br/>
-
-						Carrier weight: 4.1 pounds.<br/>
-
-						Shipping Weight: 5.3 pounds.<br/>
-
-						Fits pets up to 16 pounds.<br/>
-
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>	
-
-	<div class="flexContainer">
-		<div class="box-flex4">
-			<div class="price">	
-				<h4 >Only need</h4>
-				<h1>$290</h1>
 			</div>
 		</div>
 
-		<div class="box-flex8">
+
+		<div id="overview2">
+
+		<!--  have been debug, problem is not from here! -->
 			<div>
-				<img src="img/backpack9.jpg" alt="">
-			</div>
-			<div>
-				<img src="img/backpack8.jpg" alt="">
-			</div>
-			<div>
-				<img src="img/backpack7.jpg" alt="">
-			</div>
-		</div>
-	</div>
+				<p class="overview2Content check">
+					Want to explore the world with your cat?
+					
+				</p>
 
+				<p class="overview2Content check">
+					This carrier is good for hiking, travel and ourdoor activities.
+				</p>
+
+			</div>
+		
+
+		</div>	
+
+		<div id="feature">
+			<div class="flexContainer">
+				<div class="featureContent">
+					<div>
+						<h3>Bubble Window</h3>
+						<p>
+							The window design provides your pet a more interesting and safe space, stop your pet from escaping, which allows your pets to enjoy the sunshine and scenery with you and interact with the outside world.
+						</p>
+					</div>
+				</div>
+
+				<div class="featureContent">
+					<img src="img/placeholder.jpg">
+				</div>
+			</div>
+			<div class="flexContainer">
+				<div class="featureContent">
+					<img src="img/placeholder.jpg">
+				</div>
+
+				<div class="featureContent">
+					<div>
+						<h3>In Airplane Carrier / Car Seat All in One</h3>
+						<p>	
+							Double Breathable Mesh and Transparent Mobile pet bed, in-cabin airplane carrier, and car seat all in one.
+						</p>
+					</div>
+				</div>
+			</div>			
+		</div>
+
+	<!-- 	<div id="feature" class="feature">
+			<h1>FEATURE</h1>
+			<div class="flexContainer">
+				<div class="box-flex6">
+					<img src="img/backpack2.jpg" alt="bagpack2">
+				</div>
+				<div class="box-flex6">
+					<div class="featureContent">
+						<h2>Bubble Window</h2> -->
+						<!-- the abstract color bar -->
+	<!-- 					<div class="colorBar"></div>
+						<p class="productDetail">
+							Double Breathable Mesh and Transparent
+
+							Semi-sphere Window Design.It’a changeable
+
+							depends on different weather. The window
+
+							design provides your pet a more interesting
+
+							and safe space, stop your pet from escaping,
+
+							which allows your pets to enjoy the sunshine
+
+							and scenery with you and interact with the
+
+							outside world. More important is that allows
+
+							you check up on them easily.
+
+						</p>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+	<!-- 	<div id="feature" class="feature">
+			<div class="flexContainer">
+				<div class="featureDiv">
+					<img src="img/backpack3.jpg" alt="bagpack2">
+				</div>
+				<div class="featureDiv">
+					<div class="featureContent">
+						<h2>In Airplane Carrier / Car Seat All in One</h2> -->
+						<!-- the abstract color bar -->
+	<!-- 					<div class="colorBar"></div>
+						<p class="productDetail">
+							Double Breathable Mesh and Transparent
+							Mobile pet bed, in-cabin airplane carrier, and
+
+							car seat all in one. Adjustable backpack straps
+
+							and carrying handle make our carrier easy to
+
+							attach to a seatbelt.
+
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+	 -->
+
+	 </div>
+
+	<!-- toggle panel -->
+	<div id="productListPanel">
+		<!-- close button -->
+		<div class="closeProductListBtn" onclick="toggleProductListPanel('productListPanel')">
+			<img src="img/close.png" alt="close icon">
+		</div>
+
+		<h2>ALL PRODUCTS</h2>
+		<div class="filter">
+			<span>
+				sort by
+			</span>
+
+			<select>
+				  <option value="low">price low to high</option>
+				  <option value="high">price high to low</option>
+				  <option value="date">released date</option>
+			</select>
+		</div>
+		<!-- products section -->
+		<center>
+			<div class="productList flexContainer">
+				<a href="bagpack.html">
+					<figure class="productListItem">
+						<img src="img/backpack7.jpg" alt="product1">
+						<figcaption>
+							<p>CAT CARRIER</p>
+							<p class="productListPrice">$290</p>
+						</figcaption>
+					</figure>
+				</a>
+				<figure class="productListItem">
+					<img src="img/spacesuit_small.jpg" alt="product2">
+					<figcaption>
+						<p>SPACESUIT</p>
+						<p class="productListPrice">$345</p>
+					</figcaption>
+				</figure>
+
+				<figure class="productListItem">
+					<img src="img/swimsuit.jpg" alt="product3">
+					<figcaption>
+						<p>DOG FRIENDLY SWIMSUIT</p>
+						<p class="productListPrice">$425</p>
+					</figcaption>
+				</figure>						
+			</div>
+
+		</center>
+	</div>	 
+	<div id="coverPanel">
+
+	</div>	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>	 
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

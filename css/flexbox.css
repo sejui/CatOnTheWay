@@ -97,6 +97,7 @@
 }
 .box-flex2{
 	flex:2 1 auto;
+	flex-wrap: wrap;
 
 }
 .box-flex2 img{

@@ -158,6 +158,7 @@ a .btn:hover{
 	margin-left: 2em;
 	padding: 0em 0em 0em .6em;
 	border:solid 1px rgb(68,68,68);
+	border-radius: 5px;
 	width:2.5em;
 	height:2.5em;
 	display: inline-block;
@@ -353,6 +354,19 @@ nav{
 
 }
 
+/* hide all content until the page is fully loaded */
+#hideAll{
+	position: absolute;
+   	left: 0px; 
+   	right: 0px; 
+  	top: 0px; 
+   	bottom: 0px; 
+   	background-color: white;
+   	z-index: 99; 	
+
+   	/*display: none;*/
+}
+
 /* interactive elements end!!!! */
 
 /* combine elements */
@@ -361,11 +375,15 @@ nav{
 	margin-left:3em;
 	display: block;
 	position: absolute;
+
+	margin-top:0em;
+	flex-wrap: wrap;
+
 }
 
 .productListItem{
 	width:20em;
-	margin:2em 1em 4em 4em;
+	margin:2em 1em 4em 2em;
 	display:inline-block;
 	float:left;
 
@@ -381,7 +399,8 @@ nav{
 
 .productListItem figcaption p{
 	font-family: gravity-bold;
-	line-height: .3em;
+	line-height: 1em;
+    text-align: left;
 
 }
 .productListItem .productListPrice{

@@ -17,17 +17,22 @@
 	top:30%;
 	left: 40%;
 
-
-
+	display: none;
 }
 
 #loading h2{
-	font-family: gravity-book;
+	font-family: gravity-light;
 	color:white;
 	padding-top:35%;
 
+	animation:blink 2s infinite linear;
 }
 
+@keyframes blink{
+	0%{opacity:1;}
+	50%{opacity:.2;}
+	100%{opacity:1;}
+}
 #rocket{
 	background-image: url("../img/loading.png");
 	background-repeat: no-repeat;
