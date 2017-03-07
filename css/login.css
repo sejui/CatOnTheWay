@@ -1,8 +1,15 @@
 .backgroundContainer1 {
-	background-image: url(../img/bg.JPEG) ;
-    min-height: 100vh;
-    background-size:cover;
-    
+	background-image: url(../img/bg1.jpg);
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  min-height: 100vh;
+  overflow: hidden;
+}
+html{
+  max-height: 100vh;
 }
 /* Pen Title */
 .pen-title {
@@ -33,7 +40,7 @@
   position: relative;
   max-width: 460px;
   width: 100%;
-  margin: 3em auto 5em;
+  margin: 6em auto 5em;
 }
 .container.active .first-layer {
   background: #fafafa;
