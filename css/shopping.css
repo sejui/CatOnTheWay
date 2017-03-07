@@ -42,12 +42,13 @@
   width: 18%;
 }
 .homepageBg.bg1{
-overflow: visible;
-overflow-x: hidden;
-height: 160vh
+  overflow: visible;
+  overflow-x: hidden;
+  height: 160vh;
 }
-
-
+.homepageBg.bg1.bg2{
+  height: 100vh;
+}
 
 /* This is used as the traditional .clearfix class */
 .group:before, .shopping-cart:before, .column-labels:before, .product:before, .totals-item:before,
@@ -193,9 +194,9 @@ a .button-container{
   width: 60%;
 
 }
-.flexContainer h3{
+.checkout-process h3, .summary h3{
   padding-bottom: 1em;;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
   box-sizing: border-box;
   margin-bottom: 5%;
 }
@@ -226,7 +227,7 @@ a .button-container{
   height: auto;
   max-height: 60vh;
   padding-left: 50px;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #eee;
   box-sizing: border-box;
   margin-top: -36%;
 }
@@ -259,7 +260,7 @@ a .button-container{
 }
 .summary  #cart-shipping{
   padding-bottom: 30px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
   box-sizing: border-box;
 
 }
@@ -276,6 +277,15 @@ a .button-container#paysubmit{
  
 .confirmation{
   text-align: center;
+  width: 100%
+}
+.confirmationbox{
+  padding: 40px;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  margin: 0em 15em;
+  background-color: white;
+
 }
 .confirmation h3{
   margin-top: 50px;
@@ -284,19 +294,45 @@ a .button-container#paysubmit{
 
 a .button-container#home{
   float: none;
-  width: 20%;
+  width: 40%;
   top: 50%;
   /*left: 50%;*/
-  margin: 0px 40%;
+  /*margin: 0px 40%;*/
+}
+.more_container{
+  display: flex;
+  /*display: inline-block;*/
+  width: 100%;
+  margin-left: 4%;
+  flex-direction: row;
+    align-items: center;
+}
+.more_container img{
+  width: 70%;
+}
+
+.more_products{
+  width: 33.33%;
+
+}
+
+.moretitle h3{
+  margin-left: 3%;
+  margin-top: 4%;
+}
+
+.more_products:hover{
+  opacity: 0.8;
+  -webkit-transition:background-color .5s;
+  transition:opacity .5s;
 }
 
 
-/*reponsive shopping page*/
+
+
+
 @media screen and (max-width: 48rem){
-  .shopping-cart{
-    height: 100%;
-    width: 100%;
-  }
+  /*reponsive shopping page*/
   .column-labels{
     text-indent:-999999px;
   }
@@ -314,7 +350,7 @@ a .button-container#home{
   .product-details{
     float: right;
     top: 0;
-    margin-top: -40%;
+    margin-top: -50%;
     margin-right: 20%;
   }
   .product .product-details .product-description{
@@ -325,7 +361,7 @@ a .button-container#home{
   }
   .product-quantity{
     float: right;
-    margin-top: -25%;
+    margin-top: -30%;
     margin-right: 30%;
   }
   .product-line-price{
@@ -335,24 +371,27 @@ a .button-container#home{
     font-size: 1.4em;
   }
   .product-removal{
+    clear: both;
+    display: block;
     float: left;
-  /*  margin-left: 2%;*/
-    position: relative;
+
+  }
+  .product .remove-product{
+    margin-left: 0em;
   }
   .total .total-item label{
     float: none;
   }
   .total .total-item .total-value{
-    text-align: left;
+    text-align: right;
     margin-top: 0em;
-    margin-right: 3em;
+    /*margin-right: 3em;*/
   }
   a .button-container{
-    float: none;
-    width: 85%;
+    width: 100%;
     /*margin-right: 5%;*/
   }
-  .flexContainer .flexcon{
+  /*.flexContainer .flexcon{
     display: inline-block;
   }
   .checkout-process{
@@ -360,7 +399,39 @@ a .button-container#home{
   }
   .product .remove-product{
     margin-left: 5em;
+  }*/
+
+  /*confirmation page*/
+
+  .confirmationbox{
+    width: 100%;
+    margin: 0;
   }
+
+  .more_container {
+    flex-wrap: wrap;
+  }
+  .more_products{
+    width: 100%;
+    margin-left: 20%;
+  }
+  .checkout-process{
+    width: 80%;
+  }
+
+  .checkout-summary:before{
+    clear: both;
+    display: block;
+    content: '';
+
+  }
+  .checkout-summary{
+    margin: 0;
+    border-left: 0;
+    padding-left: 25px;
+  }
+
+
 }
 
 

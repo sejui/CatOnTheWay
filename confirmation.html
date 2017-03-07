@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
 	<title>CatOnTheWay</title>
 
 	<!-- link my normalize styleguide -->
@@ -15,7 +16,7 @@
 	<body>
 			<!-- main navigation -->
 
-	<div class="homepageBg">
+	<div class="homepageBg bg1 bg2">
 		<div class="flexContainer">
 			<div class="productBtnBox">
 				<div id="productBtn" onclick="toggleProductListPanel('productListPanel')">
@@ -103,15 +104,52 @@
 		</div>
 
 		<div class="confirmation">
-			<h2>Order Confirmation</h2>
-			<h3>THANK YOU FOR YOUR ORDER!</h3>
-			<h4>Order number is: xxxxxxxxxxx</h4>
-			<p>You will receiver an email confirmation shortly at xxxxxxxx@gmail.com.</p>
+			<div class="confirmationbox">
+				<h2>Order Confirmation</h2>
+				<h3>THANK YOU FOR YOUR ORDER!</h3>
+				<h4>Order number is: xxxxxxxxxxx</h4>
+				<p>You will receiver an email confirmation shortly at xxxxxxxx@gmail.com.</p>
+				
+				<a href="index.html">
+				   	<button class="button-container" id="home">Home</button>	
+				</a>
+			</div>
+		</div>
+		<div class="moretitle">
+		<h3>More products you might interested</h3>
+		</div>
+		<div class="more_container"> 
+			
+			<!-- <div class="more_products"> -->
+				<figure class="more_products">
+					<a href="bagpack.html">
+						<img src="img/backpack7.jpg" alt="product1"">	
+					</a>
+					<figcaption>
+					<label> CatCarrier</label>
+					</figcaption>
+				</figure>
+				<figure class="more_products">
+					<a href="bagpack.html">
+						<img src="img/spacesuit_small.jpg" alt="product2">
+					<figcaption>
+					<label> Spacesuit</label>
+					</figcaption>
+					</a>
+				</figure>
+				<figure class="more_products">
+					<a href="bagpack.html">	
+						<img src="img/swimsuit.jpg" alt="product3">	
+					<figcaption>
+					<label> Swimsuit</label>
+					</figcaption>
+					</a>
+				</figure>
+				
+			<!-- </div> -->
 			
 		</div>
-		<a href="index.html">
-		   	<button class="button-container" id="home">Home</button>	
-		</a>
+	
 	</div>
 
 

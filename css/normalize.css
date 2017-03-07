@@ -120,7 +120,7 @@ a:hover{
     background: linear-gradient(#B7C1EA, #C3ABC7);
 	background-repeat: no-repeat;
 
-	overflow:hidden;
+	/*overflow:hidden;*/
 	
 	width:100vw;
 	height:100vh;
@@ -272,11 +272,26 @@ ol{
 
 }
 
-nav{
+.nav{
 	width:100%;
 	margin:0;
 
 }
+/*.nav:before{
+	content: "";
+    display: table;
+}
+
+.nav:after{
+	clear: both;
+	content: "";
+    display: table;
+}*/
+
+.productBtnBox.menu_button{
+	display: none;
+}
+
 .boxLong a, .boxShort a{
 	font-family: "gravity-book";
 }
@@ -350,8 +365,9 @@ nav{
 /*logo*/
 
 .logobox img{
-	width: 30%;
-	margin-left: 40%;
+	width: 100%;
+	max-width: 128px;
+	margin-left: 20%;
 	margin-top: 3%;
 
 }
@@ -419,4 +435,34 @@ nav{
 }
 .colorGrey{
 	background-color:rgb(200,200,200);
+}
+.bottom-footer{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 7px;
+	position: relative;
+}
+.footer-links{
+	width: 20%;
+	/*float: right;*/
+
+}
+.footer-links p{
+	/*text-align: right;*/
+}
+.logobox.footer-logobox{
+	width: 50%;
+}
+
+@media screen and (max-width: 54rem){
+/*	.productBtnBox.menu_button{
+		display: block;
+		position: relative;	
+	 }
+
+	 .nav{
+	    display: none;
+	 }*/
+
 }

@@ -10,11 +10,14 @@
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css" >
 	<link rel="stylesheet" type="text/css" href="css/homepage.css" >
 	<link rel="stylesheet" type="text/css" href="css/login.css" >
+	<!-- <link rel="stylesheet" type="text/css" href="css/about.css" > -->
+
 	<meta name="viewport" content="width=device-width" />
 </head>
 	<body>
 			<!-- main navigation -->
-	<div class="homepageBg">
+	<!-- <div class="homepageBg"> -->
+
 		<div class="flexContainer">
 			<div class="productBtnBox">
 				<div id="productBtn" onclick="toggleProductListPanel('productListPanel')">
@@ -43,15 +46,21 @@
 					<form>
 					 <input id="search" name="search" type="text">
 					 <input id="search_submit" value="search" type="submit">
-					<!-- <img src="img/search.png" alt="search button"> -->
+					
 					</form>
 				</div>
-
 				<a href="shopping.html" class="boxShop">
 					<img src="img/shoppingbg.png" alt="shopping bag">
 				</a>
 				
 			</div>
+<!-- 			<div class="productBtnBox menu_button">
+					<div id="productBtn" onclick="toggleProductListPanel('productListPanel')">
+				 		<span> --- <br> --- <br> --- </span> 
+
+				 	</div>
+				 	<span class="bold">PRODUCTS</span>
+			    </div> -->
 		</div>
 
 			<!-- toggle panel -->
@@ -95,14 +104,14 @@
 		</div>
 	</div>
 
-
+<div class="backgroundContainer1">
 	<div class="container">
 		  <!-- <div class="first-layer"></div> -->
 		  <div class="first-layer">
 		    <h1 class="title">Login</h1>
 		    <form>
 		      <div class="input-container">
-		        <input type="#{type}" id="#{label}" required="required"/>
+		        <input type="#{type}" id="#{label}" required="required" />
 		        <label for="#{label}">Username</label>
 		        <div class="bar"></div>
 		      </div>
@@ -111,9 +120,16 @@
 		        <label for="#{label}">Password</label>
 		        <div class="bar"></div>
 		      </div>
-		      <div class="button-container">
-		        <button><span>Login</span></button>
+		     
+		      <div class="button-container">  
+		      <a href="shopping.html">  
+		        <button>
+		        <span>Login</span>
+		        </button>
+		            </a>
 		      </div>
+
+		  
 		      <div class="footer"><a href="#">Forgot your password?</a></div>
 		    </form>
 		  </div>
@@ -144,8 +160,9 @@
 		    </form>
 		  </div>
 	</div>
-
 	</div>
+
+	<!-- </div> -->
 
 		<div id="coverPanel">
 
