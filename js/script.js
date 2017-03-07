@@ -45,20 +45,20 @@ function toggleInfo(x){
 
 
 // loading function
-// window.onload = function(){
-// 	setTimeout("loadingFunction()",2500);
+window.onload = function(){
+	setTimeout("loadingFunction()",2500);
 
-// }
-// document.getElementById("hideAll").style.display="none";
-// document.getElementById("loading").style.display="block";
+}
+document.getElementById("hideAll").style.display="none";
+document.getElementById("loading").style.display="block";
 
-// function loadingFunction(){
-// 	document.getElementById("hideAll").style.display="block";
-// 	document.getElementById("loading").style.display="none";
+function loadingFunction(){
+	document.getElementById("hideAll").style.display="block";
+	document.getElementById("loading").style.display="none";
 
 
-// 	document.getElementById("hideAll").style.animation="fadein 1s";
-// }
+	document.getElementById("hideAll").style.animation="fadein 1s";
+}
 
 
 // detect user scrolling section. when user reaches specific position, do something 
