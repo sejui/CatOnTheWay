@@ -284,7 +284,7 @@ nav{
 /*search function*/
 
 .boxShop img{
-	max-width: 17%;
+	width: 1.5em;
 	float: left;
 }
 
@@ -307,19 +307,21 @@ nav{
   cursor: pointer;
 }
 .boxSearch input[type="text"]:focus:hover {
-  border: 1px solid black;
+  border-bottom: 1px solid black;
 }
 .boxSearch input[type="text"]:focus {
   width: 70%;
   z-index: 1;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
   /*margin-top: 1.2em;*/
   cursor: text;
 }
 .boxSearch input[type="submit"] {
 	/*float: right;*/
-	width: 10%;
-	background-image: url("../img/search.png")  no-repeat;
+	background-color: transparent;
+	width: 1.5rem;
+	background-repeat: no-repeat;
+	background-image: url("../img/search.png");
 	background-size: contain;
 	display: inline-block;
 	position: absolute;
@@ -327,7 +329,7 @@ nav{
 	text-indent: -10000px;
     right: 25%;
 	z-index: 2;
-	opacity: 0.4;
+	/*opacity: 0.4;*/
 	cursor: pointer;
 	transition: opacity .4s ease;
 	overflow: hidden;
@@ -337,7 +339,7 @@ nav{
 }
 
 .boxShop img:hover{   
-     opacity: 0.3;
+     opacity: 0.4;
      transition: opacity .4s ease;
 }
 
