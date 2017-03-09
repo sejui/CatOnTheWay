@@ -46,34 +46,27 @@ function toggleInfo(x){
 
 // loading function
 window.onload = function(){
-	setTimeout("loadingFunction()",2500);
+	setTimeout("loadingFunction()",0);
 
 }
 document.getElementById("hideAll").style.display="none";
-document.getElementById("loading").style.display="block";
 
 function loadingFunction(){
 	document.getElementById("hideAll").style.display="block";
-	document.getElementById("loading").style.display="none";
 
 
 	document.getElementById("hideAll").style.animation="fadein 1s";
 }
 
 
-// detect user scrolling section. when user reaches specific position, do something 
-$(".check").each(function(){
-	var pos = $(this).offset(),  //retrieve current position of an element relative to the document
-		wH = $(window).height,   //view port height
-		wY = $(window).scrollTop(); // get vertical position of the scroll bar to match an element
-	
-	if(pos.top<=wY+wH){
-		console.log("you reach the div!!!");
-		setTimeout(function(){
-			document.getElementsByClassName("overview2Content")[0].style.animation="fadein 2s";
-		},1500);
-		console.log(wY);
-		return wY;
-	}	
-
-});
+// detect user scrolling section. when user reaches specific position, do something
+// $(document).ready(function() {
+// 	$('.overview2Content').scroll(function(){
+// 		$(function()){
+// 			console.log("you reach the div!!!");
+		
+// 		document.getElementsByClassName("overview2Content")[0].style.animation="fadein 2s";
+// 	// $('#overview2Content').css("animation","fadein 5s");
+// 		});
+// 	});
+// });
