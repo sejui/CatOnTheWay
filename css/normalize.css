@@ -123,7 +123,7 @@ a:hover{
 	/*overflow:hidden;*/
 	
 	width:100vw;
-	height:100vh;
+	height:150vh;
 	/*border: solid;*/
 }
 
@@ -310,9 +310,9 @@ ol{
   border: none;
   outline: none;
   color: black;
-  padding: 10px;
+  padding: 0px 9px 0px 3px;
   width: 0;
-  right: 25%;
+  right: 31%;
   position: absolute;
   background: none;
   z-index: 3;
@@ -493,24 +493,7 @@ ol{
 .colorGrey{
 	background-color:rgb(200,200,200);
 }
-.bottom-footer{
-	width: 100%;
-	display: flex;
-	align-items: center;
-	padding: 7px;
-	position: relative;
-}
-.footer-links{
-	width: 20%;
-	/*float: right;*/
 
-}
-.footer-links p{
-	/*text-align: right;*/
-}
-.logobox.footer-logobox{
-	width: 50%;
-}
 
 @media screen and (max-width: 54rem){
 /*	.productBtnBox.menu_button{

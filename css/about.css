@@ -1,55 +1,58 @@
-.backgroundContainer {
-	background-image: url(../img/bg1.jpg);
-	background-position:center center;
-	background-repeat:no-repeat;
-	/*background-attachment: fixed;*/
-	background-size:cover;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    min-height: 97vh;
-    /*max-width: 100vw;*/
-    overflow: hidden;
+.titlebox{
+    width: 25%;
+    margin-left: 7%;
+    border-right: 1px solid rgb(197, 197, 197);
 }
 
-/*.aboutcontent{	
-	width: 100%
-	top:200px;
-}*/
-.blank{
-	margin: 25em 0 0 0;
-}
-
-.aboutcontent .content{
-	
-	float: right;
-	/*position: fixed;*/
-	margin-right: 2em;
-
-}
 .aboutcontent h2{
-	font-size: 3em;
+	font-size: 2em;
+	text-align: center;
 }
 
-.aboutcontent p{
-	width: 450px;
-	min-width: 20%;
+.contentbox{
+	display: flex;
+	margin: 2em 3em;
+	padding: 95px 0px;
+   background-color: white;	
+
+}
+.content {
+	width: 70%;
+    margin: 0 5% 0 9%;
+
+}
+.content p{
+	width: 100%;
+	min-width: 200px;
+
 }
 
+.photo{
 
-.aboutcontent a, .aboutcontent a:visited{
+	width: 50%;
+	/*margin-left: 10%;*/
+}
+.photo img{
+		/*float: right;*/
+	width: 50%;
+    width: 213px;
+}
+
+.titlebox a, .content a, .titlebox a:visited{
 	color:#E52952;
 	text-decoration: none;
-
 	/* make color transition*/
 	-webkit-transition:color .5s;
 	transition:color .5s;
 }
 /*<a> in hover*/
-.aboutcontent a:hover{
+.titlebox a:hover, .content a:hover{
 	color:rgb(150,150,150);
 	text-decoration: none;
 	cursor:pointer;
 }
+
+
 
 /*contact page*/
 html{
@@ -58,7 +61,10 @@ html{
 .checkout-process.contactwrap{
 	display: flex;
 	flex-direction: row;
-	width: 93%;
+	width: 96%;
+	padding: 60px 90px;
+    background-color: white;
+    margin: 2%
 
 }
 .checkout-process.contactwrap .contactpart{
@@ -66,8 +72,7 @@ html{
 }
 
 .checkout-process.contactwrap h3{
-   width: 70%;
-   border: none;
+   width: 60%;
 
 }
 
@@ -75,12 +80,12 @@ html{
 	width: 70%;
 }
 .checkout-process.contactwrap .text-input input[id="comment"]{
-	height: 15em;
+	height: 10em;
 
 }
 
 .checkout-process.contactwrap .info-detail{
-	width: 100%;
+	width:80%;
 }
 
 
@@ -166,8 +171,8 @@ html{
 }
 
 .info-detail img{
-	-webkit-filter: contrast(0%); 
-	filter: contrast(0%);
+/*	-webkit-filter: contrast(50%); 
+	filter: contrast(50%);*/
 	width: 20%;
 	max-width: 80px;
 }
@@ -184,23 +189,23 @@ html{
 .info-detail .icon1{
 	width: 50%;
 	float: left;
-	/*margin-right: 5%;*/
 }
-.info-detail .icon2{
-	width: 50%;
-	/*right: 0;*/
-	float: right;
+.info-detail .icon1.icon2{
+	text-decoration: none;
 }
-.info-detail img:hover{
-	-webkit-filter: contrast(1000%); 
-	filter: contrast(1000%);	
+.info-detail .icon1.icon2 p{
+	text-decoration:none;
 }
 
+.icon1.icon2 img:hover, .icon1  img:hover{
+	-webkit-filter: sepia(100%) contrast(50%) saturate(500%) hue-rotate(200deg); 
+	filter: sepia(100%) contrast(50%) saturate(500%) hue-rotate(200deg) ;	
 
-
-@media screen and (max-width: 40rem){
+}
+@media screen and (max-width: 54rem){
 	.checkout-process.contactwrap{
 		display: inline-block;
+		padding: 60px 10px;
     }
     .checkout-process.contactwrap h3:before{
     	width: 70%;
@@ -208,6 +213,13 @@ html{
 	    display: block;
 	    content: '';
     }
+    .checkout-process.contactwrap h3 {
+    	width: 100%;
+    }
+    .checkout-process.contactwrap #subtitle{
+    	width: 125%;
+    }
+
     .checkout-process.contactwrap .text-input{
     	width: 100%;
     }
@@ -218,17 +230,50 @@ html{
 	.checkout-process.contactwrap .info-detail{
 		margin-top: 50%; 
 	}
+    .info-detail .allicon{	
+		margin-left: 14%;
+	}
+}
+@media screen and (max-width: 24.6rem){
 
-	.homepageBg.bg{
-	overflow: visible;
-	overflow-x: hidden;
+	.info-detail .icon1, .info-detail .icon2{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 50.6rem){
+	.titlebox{
+		width: 100%;
+		border-right: none;
+		border-bottom: 1px solid rgb(197, 197, 197);
+		margin-left: 0;
+		margin-bottom: 2em;
+	}
+	 .contentbox{
+     	flex-wrap: wrap;
+     	margin: 0;
+     	padding: 20px;
+     }
+
+     .content{
+     	width: 100%;
+     	margin: 0;
+     
+     }
+     .homepageBg{
+     	height: 225vh;
+     }
+
+     .photo{
+     	width: 100%;
+     	margin: 0;
+     	position: relative;
+     }
+
+    .photo img{
+        width: 100%;
     }
-    .aboutcontent .content:before{
-    	clear: both;
-    	/*float: none;*/
-    	content: '';
-    	width: 100%
-    }
+
+
 
 }
 
