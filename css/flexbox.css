@@ -1,15 +1,10 @@
 .flexContainer{
 	display: flex;
-	/*puts margin*/
-	/*justify-content: space-between; */
 	flex-direction: row;
 	align-items:center;
 }
 
 [class ^='box-']{
-	/*border:solid 1px grey;*/
-	/*define the width of each box*/
-	/*flex-basis:10%;*/
 }
 
 [class ^='div']:before{
@@ -27,7 +22,6 @@
 .boxShort{
 	flex:1 1 auto;
 	min-width:50px;
-	/*margin-left: 3em;*/
 	width: 5%;
 }
 
@@ -48,9 +42,7 @@
 
 .logobox{
 	flex: 0 1 auto;
-	/*left: 50%;*/
 	width: 30%;
-	/*margin-left: 3em;*/
 	margin-top: 0.6em;
 	font-family: "gravity-bold";
     font-size: 1.3em;

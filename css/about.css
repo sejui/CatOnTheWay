@@ -28,12 +28,9 @@
 }
 
 .photo{
-
 	width: 50%;
-	/*margin-left: 10%;*/
 }
 .photo img{
-		/*float: right;*/
 	width: 50%;
     width: 213px;
 }
@@ -171,8 +168,6 @@ html{
 }
 
 .info-detail img{
-/*	-webkit-filter: contrast(50%); 
-	filter: contrast(50%);*/
 	width: 20%;
 	max-width: 80px;
 }

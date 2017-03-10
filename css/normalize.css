@@ -504,8 +504,9 @@ ol{
 .menuBtn {
 	 -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
 	 transform: rotate(90deg);
-	 margin-top: 0.9em;
+	 margin-top: 1.2em;
     letter-spacing: 1.3px;
+    cursor: pointer;
  }
 
 .menuList {
