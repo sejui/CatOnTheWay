@@ -127,15 +127,9 @@
 	 .nav{
 	    display: none;
 	 }
-
-	 .productBtnBox{
-		/*flex: none ;*/
-/*	    width: 20%;
-    	min-width: 10px;*/
-	 }
 	 .logobox{
-	 	/*width: 10%;*/
-	 	font-size: 1em
+	 	font-size: 1em;
+	 	margin-bottom: 1em;
 	 }
 
 }
