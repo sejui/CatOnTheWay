@@ -54,14 +54,14 @@
 	margin-top: 0.6em;
 	font-family: "gravity-bold";
     font-size: 1.3em;
-    min-width: 210px;
+    min-width: 140px;
 }
 
 .productBtnBox{
 	flex:3 1 auto;
 	margin:1em;
 	width: 40%;
-	min-width:100px;
+	min-width:50px;
 }
 
 .nav{
@@ -120,4 +120,22 @@
 }
 .box-flex8{
 	flex:8 1 auto;
+}
+
+
+@media screen and (max-width: 50rem){
+	 .nav{
+	    display: none;
+	 }
+
+	 .productBtnBox{
+		/*flex: none ;*/
+/*	    width: 20%;
+    	min-width: 10px;*/
+	 }
+	 .logobox{
+	 	/*width: 10%;*/
+	 	font-size: 1em
+	 }
+
 }

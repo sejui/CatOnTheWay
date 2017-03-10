@@ -238,7 +238,7 @@ a .button-container{
 
 .summary {
   width: 100%;
-  margin-top: 7%;
+  /*margin-top: 7%;*/
 
 }
 /*.summary h3{
@@ -401,6 +401,9 @@ a .button-container#home{
     text-align: right;
     margin-top: 0em;
     /*margin-right: 3em;*/
+  }
+  a .button-container{
+    width: 100%;
   }
   a .button-container#paysubmit{
     width: 93%;

@@ -2,24 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>CatOnTheWay</title>
 	<meta name="viewport" content="width=device-width" />
+	<title>CatOnTheWay</title>
 
 	<!-- link my normalize styleguide -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" >
 	<!-- link my grid styleguide -->
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css" >
 	<link rel="stylesheet" type="text/css" href="css/homepage.css" >
+	<link rel="stylesheet" type="text/css" href="css/shopping.css" >
 	<link rel="stylesheet" type="text/css" href="css/about.css" >
-		<!-- link to favicon -->
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
 </head>
 	<body>
 			<!-- main navigation -->
-
-	
 	<div class="homepageBg bg1 bg2">
 		<div class="flexContainer">
 			<div class="productBtnBox">
@@ -57,6 +53,7 @@
 				<a href="shopping.html" class="boxShop">
 					<img src="img/shoppingbg.png" alt="shopping bag">
 				</a>
+
 				
 			</div>
 			<div class="twoBox">
@@ -97,91 +94,58 @@
 			
 		</div>
 
-		
 
-			<!-- toggle panel -->
-			<div id="productListPanel">
+		<div id="productListPanel">
 		<!-- close button -->
 		<div class="closeProductListBtn" onclick="toggleProductListPanel('productListPanel')">
 			<img src="img/close.png" alt="close icon">
 		</div>
 
 		<h2>ALL PRODUCTS</h2>
-		<div class="filter">
-			<span>
-				sort by
-			</span>
-
-			<select>
-				  <option value="low">price low to high</option>
-				  <option value="high">price high to low</option>
-				  <option value="date">released date</option>
-			</select>
-		</div>
+		<p>
+			sort by price low to high
+		</p>
 
 		<!-- products section -->
-	<div class="productList">
-		<a href="bagpack.html">
+		<div class="productList">
+			<a href="bagpack.html">
+					<figure class="productListItem">
+						<img src="img/backpack7.jpg" alt="product1">
+						<figcaption>
+							<p>CAT CARRIER</p>
+							<p class="productListPrice">$290</p>
+						</figcaption>
+					</figure>
+				</a>
 				<figure class="productListItem">
-					<img src="img/backpack7.jpg" alt="product1">
+					<img src="img/spacesuit_small.jpg" alt="product2">
 					<figcaption>
-						<p>CAT CARRIER</p>
-						<p class="productListPrice">$290</p>
+						<p>SPACESUIT</p>
+						<p class="productListPrice">$345</p>
 					</figcaption>
 				</figure>
-			</a>
-			<a href="spacesuit.html">
-			<figure class="productListItem">
-				<img src="img/spacesuit_small.jpg" alt="product2">
-				<figcaption>
-					<p>SPACESUIT</p>
-					<p class="productListPrice">$345</p>
-				</figcaption>
-			</figure>
-			</a>
 
-			<a href="spacesuit.html">
-			<figure class="productListItem">
-				<img src="img/swimsuit.jpg" alt="product3">
-				<figcaption>
-					<p>DOG FRIENDLY SWIMSUIT</p>
-					<p class="productListPrice">$425</p>
-				</figcaption>
-			</figure>	
-			</a>					
-		</div>
+				<figure class="productListItem">
+					<img src="img/swimsuit.jpg" alt="product3">
+					<figcaption>
+						<p>DOG FRIENDLY SWIMSUIT</p>
+						<p class="productListPrice">$425</p>
+					</figcaption>
+				</figure>						
+			</div>
 	</div>
 
 
-			
+	</div>		
 
-
-		<div class="contentbox">
-			<div class="titlebox">
-				<h2>ABOUT US</h2>
-
-			</div>
-			<div class="content">
-				<p>First and foremost, I'd like to thank everyone for the gracious support of Cat on the Way. As a pet owner myself, and someone who has been through some of life's darkest hours with the company of my cats, I understand that they are far more than just pets--they're our partners in life as well as little angels that have been sent to protect us. The greatest aspiration of a cat lover is to continue to design and deliver the best products in order for all cats to enjoy just like my little angels have. As a good cat parent and a product design developer, I know I may not be the best businessman; therefore, the door is open to different forms of cooperation and collaborations. If more can be done for cats, then why not? My little angels love our products, yours will too, believe me! 
-			
-
-				<p>Cat On the Way founded in 2017, it was developed by pet lovers to share the world with their pets. Dedicated to providing the best quality products for their pets and pet-parents, Cat On the Way’s innovative designs, solution-based products, and proprietary collections are a great way to give your pet a window to the world. </p>
-				<p>If you have any question , please free to <a href="contact.html">contact us.</a></p>	
-			</div>
-
-			
-			<div class="photo">
-				<img src="img/portrait.jpg">
-				
-			</div>	
-		</div>
-
-	</div>
 
 		<div id="coverPanel">
 
 		</div>
-		<script type="text/javascript" src="js/script.js"></script>
 		
-	</body>
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script type="text/javascript" src="js/script.js"></script>
+
+		<script type="text/javascript" src="js/index.js"></script>
+		</body>
 </html>

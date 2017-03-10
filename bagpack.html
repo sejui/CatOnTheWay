@@ -21,7 +21,7 @@
 	<div id="hideAll"> <!-- this div hides all content and will only show centent when page is loaded -->
 		<div class="flexContainer">
 			<div class="productBtnBox">
-				<div id="productBtn" onclick="toggleProductListPanel('productListPanel')">
+				<div class="productBtn" onclick="toggleProductListPanel('productListPanel')">
 			 		<span>... <br> ... <br> ... </span> 
 
 			 	</div>
@@ -56,6 +56,15 @@
 				</a>
 				
 			</div>
+			<div class="twoBox">
+				<div class="productBtnBox menuBox">
+				<div class="productBtn menuBtn" onclick="toggleProductListPanel('menuListPanel')">
+			 		<span>... <br> ... <br> ... </span> 
+
+			 	</div>
+			 	<span class="bold">MENU</span>
+			 	</div>
+			 </div>
 		</div>
 
 
@@ -146,6 +155,31 @@
 
 	<!-- end of hideAll div -->
 	 </div>
+
+	 <div id="menuListPanel" class="menuList">
+			<div class="closeProductListBtn" onclick="toggleProductListPanel('menuListPanel')">
+				<img src="img/close.png" alt="close icon">
+			</div>
+				
+					<a href="about.html"> ABOUT </a>
+			
+					<a href="login.html"> LOGIN</a>
+			
+				<a href="contact.html"> CONTACT</a>
+
+				<div class="boxSearch">
+					<form>
+					 <input id="search" name="search" type="text">
+					 <input id="search_submit" value="search" type="submit">
+					
+					</form>
+				</div>
+
+				<a href="shopping.html" class="boxShop">
+					<img src="img/shoppingbg.png" alt="shopping bag">
+				</a>
+			
+		</div>
 
 	<!-- toggle panel -->
 	<div id="productListPanel">

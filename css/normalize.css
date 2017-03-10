@@ -129,7 +129,8 @@ a:hover{
 
 .bold{
 	font-family:gravity-bold;
-	margin-left:1em;
+	/*margin-left:1em;*/
+	font-size: 0.6em
 }
 
 a .btn{
@@ -154,8 +155,8 @@ a .btn:hover{
 	background-color: rgb(68,68,68);
 }
 
-#productBtn{
-	margin-left: 2em;
+.productBtn{
+	/*margin-left: 2em;*/
 	padding: 0em 0em 0em .6em;
 	border:solid 1px rgb(68,68,68);
 	/*border-radius: 5px;*/
@@ -169,17 +170,17 @@ a .btn:hover{
 	transition:border-color .5s;	
 }
 
-#productBtn span{
+.productBtn span{
 	-webkit-transition:color .5s;
 	transition:color .5s;
 }
 
-#productBtn:hover{
+.productBtn:hover{
 	cursor:pointer;
 	border-color: rgb(100,100,100);
 
 }
-#productBtn:hover span{
+.productBtn:hover span{
 	color:rgb(150,150,150);
 }
 
@@ -219,7 +220,7 @@ a .btn:hover{
 	-webkit-transition:webkit-transform .5s;
 	transition: transform .5s;		
 }
-.closeProductListBtn:hover img{
+.closeProductListBtn:hover img, .menuList.closeProductListBtn:hover img{
 	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
     transform: rotate(90deg);
 }
@@ -288,9 +289,7 @@ ol{
     display: table;
 }*/
 
-.productBtnBox.menu_button{
-	display: none;
-}
+
 
 .boxLong a, .boxShort a{
 	font-family: "gravity-book";
@@ -402,6 +401,7 @@ ol{
 	/* tell the productlist panel to transit the width in a linear style */
 	-webkit-transition:width 0.2s linear 0s;
 	transition:width 0.2s linear 0s;
+
 }
 #productListPanel h2{
     margin-top: 3em;
@@ -411,28 +411,30 @@ ol{
     font-family: gravity-bold;
 
 }
-#productListPanel .filter span{
+ .filter span{
 
 	font-size:.8em;
 }
 
-#productListPanel .filter{
+.filter{
 	position: relative;
 	left:10%;
 	z-index: 100;
 }
 
-#productListPanel .filter select{
+.filter select{
 	z-index: 100;
 	color:#6DC1E2;
 	border:white;
 	background-color:none;
+	width: 20%;
+    float: none;
 }
 
 #coverPanel{
 	z-index: 100;
 	position:absolute;
-	background-color: black;
+	background-color: white;
 	opacity:.2;
 	height:100vh;
 	width:100%;
@@ -495,14 +497,103 @@ ol{
 }
 
 
-@media screen and (max-width: 54rem){
-/*	.productBtnBox.menu_button{
-		display: block;
-		position: relative;	
+
+.productBtnBox.menuBox{
+    display: none;
+}
+.productBtnBox.menuBox:after{
+/*	content: "|||";
+    -webkit-transform: rotate(-90deg);*/
+    /*width: 30px;*/
+    /*height: 30px;*/
+    /*display: inline-block;*/
+    position: absolute;
+    /*right: 5px;*/
+/*    top: 20px;*/
+    display: block;
+   
+
+}
+
+.menuList {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1111111;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+    -webkit-transition:width 0.2s linear 0s;
+	transition:width 0.2s linear 0s;
+}
+
+.menuList  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s
+
+}
+
+.menuList  a:hover{
+    color: #f1f1f1;
+}
+
+.menuList  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+   
+}
+.menuList .boxSearch{
+	float: none;
+
+}
+.menuList .boxSearch input[type="text"]{
+
+    padding: 0px 9px 0px 9px;
+    right: -60%;
+    width: 200%;
+
+
+}
+
+.menuList .boxShop{
+	width: 100%;
+	margin-top: 5%;
+
+}
+.menuList .boxShop img{
+	float: none;
+}
+.menuList .closeProductListBtn{
+	margin-left: 90%;
+}
+
+
+@media screen and (max-width: 50rem){
+	.twoBox{
+		width: 30%;
+	}
+
+   .productBtnBox.menuBox{
+    flex: none;
+	display: block;
+    position: relative;
+     max-width: 50px;
+     float: right
 	 }
 
-	 .nav{
-	    display: none;
-	 }*/
+    .productBtn.menuBtn{
+	 	margin-left: 0;
+
+	 }
 
 }

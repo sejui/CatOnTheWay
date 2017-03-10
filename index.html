@@ -21,14 +21,13 @@
 	<!-- main navigation -->
 	<div class="flexContainer">
 		<div class="productBtnBox">
-			<div id="productBtn" onclick="toggleProductListPanel('productListPanel')">
+			<div class="productBtn" onclick="toggleProductListPanel('productListPanel')">
 		 		<span>... <br> ... <br> ... </span> 
 
 		 	</div>
 		 	<span class="bold product" onclick="toggleProductListPanel('productListPanel')">PRODUCTS</span>
 		 </div>
-
-		 
+ 
 		 
 		 <a href="index.html" class="logobox">
 			 CAT ON THE WAY	
@@ -53,10 +52,45 @@
 
 			<a href="login.html" class="boxShop">
 				<img src="img/shoppingbg.png" alt="shopping bag">
-			</a>
+			</a>	
+		</div>
+		<div class="twoBox">
+			<div class="productBtnBox menuBox">
+			<div class="productBtn menuBtn" onclick="toggleProductListPanel('menuListPanel')">
+		 		<span>... <br> ... <br> ... </span> 
+
+		 	</div>
+		 	<span class="bold">MENU</span>
+		 	</div>
+		 </div>	
+	</div>
+	
+		<div id="menuListPanel" class="menuList">
+			<div class="closeProductListBtn" onclick="toggleProductListPanel('menuListPanel')">
+				<img src="img/close.png" alt="close icon">
+			</div>
+				
+					<a href="about.html"> ABOUT </a>
+			
+					<a href="login.html"> LOGIN</a>
+			
+				<a href="contact.html"> CONTACT</a>
+
+				<div class="boxSearch">
+					<form>
+					 <input id="search" name="search" type="text">
+					 <input id="search_submit" value="search" type="submit">
+					
+					</form>
+				</div>
+
+				<a href="shopping.html" class="boxShop">
+					<img src="img/shoppingbg.png" alt="shopping bag">
+				</a>
 			
 		</div>
-	</div>
+
+
 
 	<div class="div-homepage">
 		<div class="home-text">
@@ -74,7 +108,7 @@
 					<div class="btn"> EXPLORE </div>
 				</a>
 			</div>
-		</div>
+		</div>	
 	</div>
 	<!-- toggle panel -->
 	<div id="productListPanel">

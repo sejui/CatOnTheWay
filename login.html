@@ -10,7 +10,10 @@
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css" >
 	<link rel="stylesheet" type="text/css" href="css/homepage.css" >
 	<link rel="stylesheet" type="text/css" href="css/login.css" >
-	<!-- <link rel="stylesheet" type="text/css" href="css/about.css" > -->
+
+		<!-- link to favicon -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
 	<meta name="viewport" content="width=device-width" />
 </head>
@@ -20,16 +23,17 @@
 
 		<div class="flexContainer">
 			<div class="productBtnBox">
-				<div id="productBtn" onclick="toggleProductListPanel('productListPanel')">
+				<div class="productBtn" onclick="toggleProductListPanel('productListPanel')">
 			 		<span>... <br> ... <br> ... </span> 
 
 			 	</div>
 			 	<span class="bold">PRODUCTS</span>
 			 </div>
 
-			  <a href="index.html" class="logobox">
+			 <a href="index.html" class="logobox">
 				CAT ON THE WAY
 			 </a>
+		
 
 			 <div class="nav">	
 		
@@ -46,38 +50,77 @@
 					<form>
 					 <input id="search" name="search" type="text">
 					 <input id="search_submit" value="search" type="submit">
-					
+					<!-- <img src="img/search.png" alt="search button"> -->
 					</form>
 				</div>
-				<a href="login.html" class="boxShop">
+
+				<a href="shopping.html" class="boxShop">
 					<img src="img/shoppingbg.png" alt="shopping bag">
 				</a>
 				
 			</div>
-<!-- 			<div class="productBtnBox menu_button">
-					<div id="productBtn" onclick="toggleProductListPanel('productListPanel')">
-				 		<span> --- <br> --- <br> --- </span> 
+			<div class="twoBox">
+				<div class="productBtnBox menuBox">
+				<div class="productBtn menuBtn" onclick="toggleProductListPanel('menuListPanel')">
+			 		<span>... <br> ... <br> ... </span> 
 
-				 	</div>
-				 	<span class="bold">PRODUCTS</span>
-			    </div> -->
+			 	</div>
+			 	<span class="bold">MENU</span>
+			 	</div>
+			 </div>
+
 		</div>
 
+		<div id="menuListPanel" class="menuList">
+			<div class="closeProductListBtn" onclick="toggleProductListPanel('menuListPanel')">
+				<img src="img/close.png" alt="close icon">
+			</div>
+				
+					<a href="about.html"> ABOUT </a>
+			
+					<a href="login.html"> LOGIN</a>
+			
+				<a href="contact.html"> CONTACT</a>
+
+				<div class="boxSearch">
+					<form>
+					 <input id="search" name="search" type="text">
+					 <input id="search_submit" value="search" type="submit">
+					
+					</form>
+				</div>
+
+				<a href="shopping.html" class="boxShop">
+					<img src="img/shoppingbg.png" alt="shopping bag">
+				</a>
+			
+		</div>
+
+		
+
 			<!-- toggle panel -->
-	<div id="productListPanel">
+			<div id="productListPanel">
 		<!-- close button -->
 		<div class="closeProductListBtn" onclick="toggleProductListPanel('productListPanel')">
 			<img src="img/close.png" alt="close icon">
 		</div>
 
 		<h2>ALL PRODUCTS</h2>
-		<p>
-			sort by price low to high
-		</p>
+		<div class="filter">
+			<span>
+				sort by
+			</span>
+
+			<select>
+				  <option value="low">price low to high</option>
+				  <option value="high">price high to low</option>
+				  <option value="date">released date</option>
+			</select>
+		</div>
 
 		<!-- products section -->
-		<div class="productList">
-			<a href="bagpack.html">
+	<div class="productList">
+		<a href="bagpack.html">
 				<figure class="productListItem">
 					<img src="img/backpack7.jpg" alt="product1">
 					<figcaption>
@@ -86,6 +129,7 @@
 					</figcaption>
 				</figure>
 			</a>
+			<a href="spacesuit.html">
 			<figure class="productListItem">
 				<img src="img/spacesuit_small.jpg" alt="product2">
 				<figcaption>
@@ -93,14 +137,17 @@
 					<p class="productListPrice">$345</p>
 				</figcaption>
 			</figure>
+			</a>
 
+			<a href="spacesuit.html">
 			<figure class="productListItem">
 				<img src="img/swimsuit.jpg" alt="product3">
 				<figcaption>
 					<p>DOG FRIENDLY SWIMSUIT</p>
 					<p class="productListPrice">$425</p>
 				</figcaption>
-			</figure>						
+			</figure>
+			</a>						
 		</div>
 	</div>
 
