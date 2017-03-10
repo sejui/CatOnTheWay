@@ -106,9 +106,9 @@ html{
 
 
 .button-container#contactbutton2{
-	max-width: 100%;
 	margin-top: 2em;
 	float: left;
+	width: 20%;
 }
 
 .button-container#paysubmit{
@@ -232,6 +232,9 @@ html{
 	}
     .info-detail .allicon{	
 		margin-left: 14%;
+	}
+	.button-container#contactbutton2{
+		width: 100%;
 	}
 }
 @media screen and (max-width: 24.6rem){
