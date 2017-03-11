@@ -397,5 +397,17 @@
 		#overview3 div{
 		width:100%;
 	}	
+	.overview3 div{
+		width:40%;
+	}	
 }
 
+@media(max-height:784px){
+	.overview2Content{
+		font-size: 2rem;
+	}
+
+	.overview3 div{
+		width:40%;
+	}
+}

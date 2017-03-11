@@ -132,6 +132,9 @@ a:hover{
 	font-size: 0.6em;
 	margin-top: 10px;
 }
+.boldtitle{
+	letter-spacing: 1px !important;
+}
 
 a .btn{
     background-color: #E52952;
@@ -507,6 +510,7 @@ ol{
 	 margin-top: 1.2em;
     letter-spacing: 1.3px;
     cursor: pointer;
+    margin-bottom: 0;
  }
 
 .menuList {
@@ -569,6 +573,11 @@ ol{
 .menuList .closeProductListBtn{
 	margin-left: 90%;
 }
+.rotateback{
+	transform: rotate(-90deg) !important;
+	font-family: gravity-bold;
+	margin-top:2em;
+}
 
 
 @media screen and (max-width: 50rem){
@@ -587,6 +596,11 @@ ol{
     .productBtn.menuBtn{
 	 	margin-left: 0;
 
+	 }
+
+	 .boldtitle{
+	 	transform: scale(.7);
+	 	transform-origin: top left;
 	 }
 
 }

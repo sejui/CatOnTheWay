@@ -96,6 +96,11 @@ html,body{
 	    right:22%;
 
 	}	
+.boldtitle{
+	transform: scale(1);
+	margin-top:1em;
+
+}	
 
 	.home-text{
 		font-size:70%;
@@ -134,6 +139,9 @@ html,body{
 	.home-product img{
 	    left: 13%;
 	    opacity: .3;
+	}
+	.boldtitle{
+		margin-top:1.5em;
 	}
 	.home-product-detail{
 		width: 240px;
