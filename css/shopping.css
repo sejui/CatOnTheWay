@@ -166,7 +166,7 @@ label{
 	font-size: 1.2em;
   font-family: "gravity-bold";
 }
-a .button-container{
+.button-container{
 	float: right;
 	width: 25%;
   font-size: 1em;
@@ -272,7 +272,7 @@ a .button-container{
 .summary #cart-total{
   font-family: "gravity-bold";
 }
-a .button-container#paysubmit{
+.button-container#paysubmit{
   float: none;
   width: 100%;
 }
@@ -298,17 +298,12 @@ a .button-container#paysubmit{
   color: #E52952;
 }
 
-a .button-container#home{
-  float: none;
+.button-container#home{
   width: 40%;
-  top: 50%;
-  /*left: 50%;*/
-  /*margin: 0px 40%;*/
 }
+
 .more_container{
   display: flex;
-  /*display: inline-block;*/
-  /*width: 100%;*/
   margin-left: 6%;
   flex-direction: row;
   align-items: center;
@@ -402,10 +397,10 @@ a .button-container#home{
     margin-top: 0em;
     /*margin-right: 3em;*/
   }
-  a .button-container{
+  .button-container{
     width: 100%;
   }
-  a .button-container#paysubmit{
+ .button-container#paysubmit{
     width: 93%;
   }
   .shopping-cart{

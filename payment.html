@@ -19,266 +19,265 @@
 </head>
 	<body>
 			<!-- main navigation -->
-<div class="homepageBg bg1 bg2">
-	<div class="flexContainer">
-			<div class="productBtnBox">
-				<div class="productBtn" onclick="toggleProductListPanel('productListPanel')">
-			 		<span>... <br> ... <br> ... </span> 
-			 		<div class="bold boldtitle">PRODUCTS</div>
+	<div class="homepageBg bg1 bg2">
+		<div class="flexContainer">
+				<div class="productBtnBox">
+					<div class="productBtn" onclick="toggleProductListPanel('productListPanel')">
+				 		<span>... <br> ... <br> ... </span> 
+				 		<div class="bold boldtitle">PRODUCTS</div>
 
-			 	</div>
-			 	
-			 </div>
+				 	</div>
+				 	
+				 </div>
 
-			 <a href="index.html" class="logobox">
-				CAT ON THE WAY
-			 </a>
-		
-
-			 <div class="nav">	
-		
-				<div class="boxLong">
-					<a href="about.html"> ABOUT </a>
-				</div>
-				<div class="boxShort">
-					<a href="login.html"> LOGIN</a>
-				</div>
-				<div class="boxLong">
-				<a href="contact.html"> CONTACT</a>
-			    </div>
-				<div class="boxSearch">
-					<form>
-					 <input id="search" name="search" type="text">
-					 <input id="search_submit" value="search" type="submit">
-					<!-- <img src="img/search.png" alt="search button"> -->
-					</form>
-				</div>
-
-				<a href="shopping.html" class="boxShop">
-					<img src="img/shoppingbg.png" alt="shopping bag">
-				</a>
-				
-			</div>
-			<div class="twoBox">
-				<div class="productBtnBox menuBox">
-				<div class="menuBtn" onclick="toggleProductListPanel('menuListPanel')">
-			 		<span>|||</span> 
-
-			 	</div>
-			 	</div>
-			 </div>
-
-		</div>
-
-		<div id="menuListPanel" class="menuList">
-			<div class="closeProductListBtn" onclick="toggleProductListPanel('menuListPanel')">
-				<img src="img/close.png" alt="close icon">
-			</div>
-				
-					<a href="about.html"> ABOUT </a>
+				 <a href="index.html" class="logobox">
+					CAT ON THE WAY
+				 </a>
 			
-					<a href="login.html"> LOGIN</a>
-			
-				<a href="contact.html"> CONTACT</a>
 
-				<div class="boxSearch">
-					<form>
-					 <input id="search" name="search" type="text">
-					 <input id="search_submit" value="search" type="submit">
+				 <div class="nav">	
+			
+					<div class="boxLong">
+						<a href="about.html"> ABOUT </a>
+					</div>
+					<div class="boxShort">
+						<a href="login.html"> LOGIN</a>
+					</div>
+					<div class="boxLong">
+					<a href="contact.html"> CONTACT</a>
+				    </div>
+					<div class="boxSearch">
+						<form>
+						 <input name="search" type="text">
+						 <input value="search" type="submit">
+						<!-- <img src="img/search.png" alt="search button"> -->
+						</form>
+					</div>
+
+					<a href="shopping.html" class="boxShop">
+						<img src="img/shoppingbg.png" alt="shopping bag">
+					</a>
 					
-					</form>
 				</div>
+				<div class="twoBox">
+					<div class="productBtnBox menuBox">
+					<div class="menuBtn" onclick="toggleProductListPanel('menuListPanel')">
+				 		<span>|||</span> 
 
-				<a href="shopping.html" class="boxShop">
-					<img src="img/shoppingbg.png" alt="shopping bag">
-				</a>
-			
-		</div>
+				 	</div>
+				 	</div>
+				 </div>
 
-		
-
-			<!-- toggle panel -->
-			<div id="productListPanel">
-		<!-- close button -->
-		<div class="closeProductListBtn" onclick="toggleProductListPanel('productListPanel')">
-			<img src="img/close.png" alt="close icon">
-		</div>
-
-		<h2>ALL PRODUCTS</h2>
-		<div class="filter">
-			<span>
-				sort by
-			</span>
-
-			<select>
-				  <option value="low">price low to high</option>
-				  <option value="high">price high to low</option>
-				  <option value="date">released date</option>
-			</select>
-		</div>
-
-		<!-- products section -->
-	<div class="productList">
-		<a href="bagpack.html">
-				<figure class="productListItem">
-					<img src="img/backpack7.jpg" alt="product1">
-					<figcaption>
-						<p>CAT CARRIER</p>
-						<p class="productListPrice">$290</p>
-					</figcaption>
-				</figure>
-			</a>
-			<a href="spacesuit.html">
-			<figure class="productListItem">
-				<img src="img/spacesuit_small.jpg" alt="product2">
-				<figcaption>
-					<p>SPACESUIT</p>
-					<p class="productListPrice">$345</p>
-				</figcaption>
-			</figure>
-			</a>
-
-			<a href="spacesuit.html">
-			<figure class="productListItem">
-				<img src="img/swimsuit.jpg" alt="product3">
-				<figcaption>
-					<p>DOG FRIENDLY SWIMSUIT</p>
-					<p class="productListPrice">$425</p>
-				</figcaption>
-			</figure>	
-			</a>					
-		</div>
-	</div>
-
-	<div class="shopping-cart">
-		<a href="shopping.html"><h3>SHOPPING CART</h3></a>
-		<a href="payment.html" id="shopping-title"><h3>&#47;CHECKOUT&#47;</h3></a>
-		<h3>COMPLETE</h3>
-
-	<!-- </div> -->
-
-<div class="contentbox paymentbox">
-	<div class="more_container paymentcontainer">
-		<div class="checkout-process">
-			<h3>Personal Information</h3>
-			<div class="process">	
-				<form>
-				<div class="text-input">
-					<label for="fname">First Name:</label>
-					<input id="fname" type="text">
-				</div>
-
-				<div class="text-input">
-					<label for="lname">Last Name:</label>
-					<input id="lname" type="text">
-				</div>
-
-				<div class="text-input">
-					<label for="address">Address:</label>
-					<input id="address" type="text">
-				</div>
-
-				<div class="text-input">
-					<label for="country">Country:</label>
-					<select id="country">
-						<option value="Canada">Canada</option>
-						<option value="US">US</option>
-						<option value="China">China</option>
-						<option value="China">Japan</option>
-					</select>
-				</div>
-
-				<div class="text-input">
-					<label for="province">Province:</label>
-					<select id="province">
-						<option value="AB">AB</option>
-						<option value="BC">BC</option>
-						<option value="MB">MB</option>
-						<option value="NB">NB</option>
-						<option value="NU">NU</option>
-						<option value="ON">ON</option>
-						<option value="QC">QC</option>
-						<option value="SK">SK</option>
-						<option value="YT">YT</option>
-					</select>
-				</div>
-
-				<div class="text-input">
-					<label for="city">City:</label>
-					<input id="city" type="text">
-				</div>
-
-				<div class="text-input">
-					<label for="code">Postal Code:</label>
-					<input id="code" type="text">
-				</div>
-
-				<div class="text-input mail">
-					<label >Email:</label>
-					<input  type="text">
-				</div>
-
-				<h3>Payment</h3>
-
-				<div class="text-input">
-					<label for="country">Payment Type:</label>
-					<select id="country">
-						<option value="Visa">Visa</option>
-						<option value="Mastercard">Mastercard</option>
-						<option value="American Express">American Express</option>
-						<option value="Pay Pal">Pay Pal</option>
-					</select>
-				</div>
-
-				<div class="text-input">
-					<label >Card Number:</label>
-					<input type="text">
-				</div>
-
-				<div class="text-input">
-					<label for="date">Expiry Date (mm/yy):</label>
-					<input id="date" type="text">
-				</div>
-
-				<div class="text-input">
-					<label >CVV:</label>
-					<input type="text">
-				</div>
-
-				</form>			
 			</div>
+
+			<div id="menuListPanel" class="menuList">
+				<div class="closeProductListBtn" onclick="toggleProductListPanel('menuListPanel')">
+					<img src="img/close.png" alt="close icon">
+				</div>
+					
+						<a href="about.html"> ABOUT </a>
+				
+						<a href="login.html"> LOGIN</a>
+				
+					<a href="contact.html"> CONTACT</a>
+
+					<div class="boxSearch">
+						<form>
+						 <input name="search" type="text">
+						 <input value="search" type="submit">
+						
+						</form>
+					</div>
+
+					<a href="shopping.html" class="boxShop">
+						<img src="img/shoppingbg.png" alt="shopping bag">
+					</a>
+				
+			</div>
+
 			
-		</div>
 
-		<div class="checkout-summary">
-			<div class="summary">
-			<h3>Order Summary</h3>
-			   	<div class="total-item">
-			      <label>Subtotal:</label>
-			      <div class="total-value" id="cart-subtotal">1060.00</div>
-			    </div>
-			    <div class="total-item">
-			      <label>Tax (12%):</label>
-			      <div class="total-value" id="cart-tax">127.20</div>
-			    </div>
-			    <div class="total-item">
-			      <label>Shipping:</label>
-			      <div class="total-value" id="cart-shipping">30.00</div>
-			    </div>
-			    <div class="total-item grand-total">
-			      <label>Grand Total:</label>
-			      <div class="total-value" id="cart-total">1217.2</div>
-			    </div> 		
-		   	</div>
+				<!-- toggle panel -->
+			<div id="productListPanel">
+			<!-- close button -->
+				<div class="closeProductListBtn" onclick="toggleProductListPanel('productListPanel')">
+					<img src="img/close.png" alt="close icon">
+				</div>
 
-		   	<a href="confirmation.html">
-		   	<button class="button-container" id="paysubmit">Submit</button>	
-		   	</a>
-	
+				<h2>ALL PRODUCTS</h2>
+				<div class="filter">
+					<span>
+						sort by
+					</span>
+
+					<select>
+						  <option value="low">price low to high</option>
+						  <option value="high">price high to low</option>
+						  <option value="date">released date</option>
+					</select>
+				</div>
+
+			<!-- products section -->
+				<div class="productList">
+					<a href="bagpack.html">
+							<figure class="productListItem">
+								<img src="img/backpack7.jpg" alt="product1">
+								<figcaption>
+									<p>CAT CARRIER</p>
+									<p class="productListPrice">$290</p>
+								</figcaption>
+							</figure>
+						</a>
+						<a href="spacesuit.html">
+						<figure class="productListItem">
+							<img src="img/spacesuit_small.jpg" alt="product2">
+							<figcaption>
+								<p>SPACESUIT</p>
+								<p class="productListPrice">$345</p>
+							</figcaption>
+						</figure>
+						</a>
+
+						<a href="spacesuit.html">
+						<figure class="productListItem">
+							<img src="img/swimsuit.jpg" alt="product3">
+							<figcaption>
+								<p>DOG FRIENDLY SWIMSUIT</p>
+								<p class="productListPrice">$425</p>
+							</figcaption>
+						</figure>	
+						</a>					
+					</div>
+				</div>
+
+			<div class="shopping-cart">
+				<a href="shopping.html"><h3>SHOPPING CART</h3></a>
+				<a href="payment.html" id="shopping-title"><h3>&#47;CHECKOUT&#47;</h3></a>
+				<h3>COMPLETE</h3>
+
+				<div class="contentbox paymentbox">
+					<div class="more_container paymentcontainer">
+						<div class="checkout-process">
+							<h3>Personal Information</h3>
+							<div class="process">	
+								<form>
+									<div class="text-input">
+										<label for="fname">First Name:</label>
+										<input id="fname" type="text">
+									</div>
+
+									<div class="text-input">
+										<label for="lname">Last Name:</label>
+										<input id="lname" type="text">
+									</div>
+
+									<div class="text-input">
+										<label for="address">Address:</label>
+										<input id="address" type="text">
+									</div>
+
+									<div class="text-input">
+										<label>Country:</label>
+										<select class="country">
+											<option value="Canada">Canada</option>
+											<option value="US">US</option>
+											<option value="China">China</option>
+											<option value="China">Japan</option>
+										</select>
+									</div>
+
+									<div class="text-input">
+										<label for="province">Province:</label>
+										<select id="province">
+											<option value="AB">AB</option>
+											<option value="BC">BC</option>
+											<option value="MB">MB</option>
+											<option value="NB">NB</option>
+											<option value="NU">NU</option>
+											<option value="ON">ON</option>
+											<option value="QC">QC</option>
+											<option value="SK">SK</option>
+											<option value="YT">YT</option>
+										</select>
+									</div>
+
+									<div class="text-input">
+										<label for="city">City:</label>
+										<input id="city" type="text">
+									</div>
+
+									<div class="text-input">
+										<label for="code">Postal Code:</label>
+										<input id="code" type="text">
+									</div>
+
+									<div class="text-input mail">
+										<label >Email:</label>
+										<input  type="text">
+									</div>
+
+									<h3>Payment</h3>
+
+									<div class="text-input">
+										<label>Payment Type:</label>
+										<select class="country">
+											<option value="Visa">Visa</option>
+											<option value="Mastercard">Mastercard</option>
+											<option value="American Express">American Express</option>
+											<option value="Pay Pal">Pay Pal</option>
+										</select>
+									</div>
+
+									<div class="text-input">
+										<label >Card Number:</label>
+										<input type="text">
+									</div>
+
+									<div class="text-input">
+										<label for="date">Expiry Date (mm/yy):</label>
+										<input id="date" type="text">
+									</div>
+
+									<div class="text-input">
+										<label >CVV:</label>
+										<input type="text">
+									</div>
+
+								</form>			
+							</div>
+							
+						</div>
+
+						<div class="checkout-summary">
+							<div class="summary">
+								<h3>Order Summary</h3>
+							   	<div class="total-item">
+							      <label>Subtotal:</label>
+							      <div class="total-value" id="cart-subtotal">1060.00</div>
+							    </div>
+							    <div class="total-item">
+							      <label>Tax (12%):</label>
+							      <div class="total-value" id="cart-tax">127.20</div>
+							    </div>
+							    <div class="total-item">
+							      <label>Shipping:</label>
+							      <div class="total-value" id="cart-shipping">30.00</div>
+							    </div>
+							    <div class="total-item grand-total">
+							      <label>Grand Total:</label>
+							      <div class="total-value" id="cart-total">1217.2</div>
+							    </div> 		
+						   	</div>
+
+						   	
+						   	<div class="button-container" id="paysubmit"><a href="confirmation.html">Submit</a></div>	
+						   	
+					
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
-</div>
-</div>
 
 	<div id="coverPanel">
 

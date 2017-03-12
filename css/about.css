@@ -70,7 +70,7 @@ html{
 }
 
 .checkout-process.contactwrap h3{
-   width: 60%;
+   width: 70%;
 
 }
 
@@ -101,7 +101,12 @@ html{
 	-webkit-transition:background-color .5s;
 	transition:background-color .5s;	
 }
-
+.button-container a{
+	color: white;
+}
+.button-container#contactbutton{
+	width: 40%;
+}
 
 .button-container#contactbutton2{
 	margin-top: 2em;
@@ -110,7 +115,7 @@ html{
 }
 
 .button-container#paysubmit{
-	width: 30%;
+	width: 100%;
 }
 .button-container:hover{
 	background-color: #E52952;
@@ -146,7 +151,7 @@ html{
 .button-content1 h3{
 	margin-bottom: 10%;
 	text-align: center;
-	margin-left: 10%;
+	margin-left: 15%;
 }
 .button-content1 p{
 	margin-bottom: 10%;
@@ -208,9 +213,6 @@ html{
 	    clear: both;
 	    display: block;
 	    content: '';
-    }
-    .checkout-process.contactwrap h3 {
-    	width: 100%;
     }
     .checkout-process.contactwrap #subtitle{
     	width: 125%;

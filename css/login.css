@@ -137,11 +137,11 @@ html{
 .first-layer .input-container input:focus ~ .bar:before, .first-layer .input-container input:focus ~ .bar:after {
   width: 50%;
 }
-.first-layer .input-container input:valid ~ label {
+/*.first-layer .input-container input:valid ~ label {
   color: #9d9d9d;
   -webkit-transform: translate(-12%, -50%) scale(0.75);
           transform: translate(-12%, -50%) scale(0.75);
-}
+}*/
 .first-layer .input-container label {
   position: absolute;
   top: 0;
