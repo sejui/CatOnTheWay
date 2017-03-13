@@ -99,7 +99,6 @@
 	/*height:50vh;*/
 	flex-shrink: 1;
 	/*flex-wrap: wrap;*/
-	margin:0x;
 }
 
 .featureContent{
@@ -213,7 +212,7 @@
 
 .information img{
 	max-width: 20px;
-	max-height: auto;
+	/*max-height: auto;*/
 	opacity: .4;
 	margin-top:1em;
 }

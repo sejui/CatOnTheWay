@@ -54,6 +54,7 @@
 	margin:1em;
 	width: 40%;
 	min-width:50px;
+	padding-left:1.5em;
 }
 
 .nav{
@@ -61,6 +62,7 @@
 	display: flex;
 	margin-top:1em;
 	width: 30%;
+	/*padding-top:.8em;*/
 }
 
 .checkoutbox {
@@ -122,6 +124,7 @@
 	 .logobox{
 	 	font-size: 1em;
 	 	margin-bottom: 1em;
+	 	
 	 }
 
 }

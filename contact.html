@@ -18,60 +18,58 @@
 
 </head>
 	<body>
-			<!-- main navigation -->
+	<!-- main navigation -->
 
 
     <div class="homepageBg bg ">
 	
-		<div class="flexContainer">
-			<div class="productBtnBox">
-				<div class="productBtn" onclick="toggleProductListPanel('productListPanel')">
-			 		<span>... <br> ... <br> ... </span>
-			 		<div class="bold">PRODUCTS</div> 
+	<!-- main navigation -->
+	<div class="flexContainer">
+		<div class="productBtnBox lessPadding">
+			<div class="productBtn" onclick="toggleProductListPanel('productListPanel')">
+		 		<span>... <br> ... <br> ... </span> 
+		 		<div class="bold boldtitle" onclick="toggleProductListPanel('productListPanel')">PRODUCTS</div>
 
-			 	</div>
-			 </div>
-
-			 <a href="index.html" class="logobox">
-				CAT ON THE WAY
-			 </a>
-		
-
-			 <div class="nav">	
-		
-				<div class="boxLong">
-					<a href="about.html"> ABOUT </a>
-				</div>
-				<div class="boxShort">
-					<a href="login.html"> LOGIN</a>
-				</div>
-				<div class="boxLong">
-				<a href="contact.html"> CONTACT</a>
-			    </div>
-				<div class="boxSearch">
-					<form>
-					 <input name="search" type="text">
-					 <input value="search" type="submit">
-					<!-- <img src="img/search.png" alt="search button"> -->
-					</form>
-				</div>
-
-				<a href="shopping.html" class="boxShop">
-					<img src="img/shoppingbg.png" alt="shopping bag">
-				</a>
-				
+		 	</div>
+		 	
+		 </div>
+ 
+		 
+		 <a href="index.html" class="logobox">
+			 CAT ON THE WAY	
+		 </a>
+		 <div class="nav">	
+			<div class="boxLong">
+				<a href="about.html"> ABOUT </a>
 			</div>
-			<div class="twoBox">
-				<div class="productBtnBox menuBox">
-				<div class="menuBtn" onclick="toggleProductListPanel('menuListPanel')">
-			 		<span>||| </span> 
+			<div class="boxShort">
+				<a href="login.html"> LOGIN</a>
+			</div>
+			<div class="boxLong">
+				<a href="contact.html"> CONTACT</a>
+			</div>
+			<div class="boxSearch">
+				<form>
+				 <input name="search" type="text">
+				 <input value="search" type="submit">
+				<!-- <img src="img/search.png" alt="search button"> -->
+				</form>
+			</div>
 
-			 	</div>
-			 	</div>
-			 </div>
-
-
+			<a href="login.html" class="boxShop">
+				<img src="img/shoppingbg.png" alt="shopping bag">
+			</a>	
 		</div>
+		<div class="twoBox">
+			<div class="productBtnBox menuBox">
+			<div class="menuBtn" onclick="toggleProductListPanel('menuListPanel')">
+		 		<span>||| </span> 
+		 		
+		 	</div>
+		 	<span class="bold boldtitle">MENU</span>
+		 	</div>
+		 </div>	
+	</div>
 
 		<div id="menuListPanel" class="menuList">
 			<div class="closeProductListBtn" onclick="toggleProductListPanel('menuListPanel')">
