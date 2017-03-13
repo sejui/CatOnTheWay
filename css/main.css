@@ -46,6 +46,7 @@ code{
 	color:rgb(200,80,80);
 }
 
+
 .grid-row{
 	height:200px;
 	/*border:solid black;*/
@@ -74,4 +75,17 @@ code{
 	display: block;
 	content:'';
 	clear:both;
+}
+
+.pink{
+	background:#E52952;
+}
+.gradient{
+		/* for browser that don't support gradient */
+	background:#B7C1EA;
+	/* gradient color */
+	background:-webkit-linear-gradient(#B7C1EA, #C3ABC7);
+	background: -moz-linear-gradient(#B7C1EA, #C3ABC7); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#B7C1EA, #C3ABC7);
+	background-repeat: no-repeat;
 }

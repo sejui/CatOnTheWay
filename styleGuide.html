@@ -4,13 +4,14 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,
 		initial-scale=1.0">
-		<title>style guide</title>
+		<title>styleguide</title>
 		<!-- link my normalize styleguide -->
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" >
 		<!-- link my grid styleguide -->
-		<link rel="stylesheet" type="text/css" href="css/grid.css" >
+		<link rel="stylesheet" type="text/css" href="css/flexbox.css" >
 		<!-- link my main styleguide to promote reading -->
 		<link rel="stylesheet" type="text/css" href="css/main.css" >
+		<!-- <link rel="stylesheet" type="text/css" href="css/homepage.css" > -->
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 	</head>
@@ -23,9 +24,7 @@
 			<li><a href="#textElements">text elements</a></li>
 			<li><a href="#combinedElements">combined elements</a></li>
 			<li><a href="#interactiveElements">interactive elements</a></li>
-			<li><a href="tv/home.html" class="colorBlueText">game console wireframe</a></li>
-			<li><a href="watch/home.html" class="colorBlueText">smartwatch wireframe</a></li>
-			<li><a href="iphone/home.html" class="colorBlueText">smartphone wireframe</a></li>
+
 			<li><a href="citation.html" class="colorGreenText">citation page</a></li>
 		</ul>
 		<section id="textElements">
@@ -109,44 +108,76 @@
 		</section>
 
 		<section id="combinedElements">
-			<h3>navigation button</h3>
+			<h3>navigation</h3>
+			<h3 class="subTitle">css selector</h3>		
+			<p>
+				 .productBtn, .productBtnBox, .productBtnBox, .menuBox
+			</p>
+
+		<div class="flexContainer">
+			<div class="productBtnBox">
+				<div class="productBtn" onclick="toggleProductListPanel('productListPanel')">
+			 		<span>... <br> ... <br> ... </span> 
+			 		<div class="bold boldtitle" onclick="toggleProductListPanel('productListPanel')">PRODUCTS</div>
+			 	</div>
+			 	
+			 </div>
+
+			 	 
+			 <a href="index.html" class="logobox">
+				 CAT ON THE WAY
+			 </a>
+			 <div class="nav">	
+				<div class="boxLong">
+					<a href="about.html"> ABOUT </a>
+				</div>
+				<div class="boxShort">
+					<a href="login.html"> LOGIN</a>
+				</div>
+				<div class="boxLong">
+					<a href="contact.html"> CONTACT</a>
+				</div>
+				<div class="boxSearch">
+					<form>
+					 <input name="search" type="text">
+					 <input value="search" type="submit">
+					
+					</form>
+				</div>
+
+				<a href="login.html" class="boxShop">
+					<img src="img/shoppingbg.png" alt="shopping bag">
+				</a>
+				
+			</div>
+			<div class="twoBox">
+				<div class="productBtnBox menuBox">
+					<div class="menuBtn" onclick="toggleProductListPanel('menuListPanel')">
+				 		<span>||| </span> 
+
+				 	</div>
+			 	</div>
+			 </div>
+		</div>
+		</section>
+
+
+
+		<section>
+			<h3>submit buttons</h3>
 			<h3 class="subTitle">css selector</h3>		
 			<p>
 				 .btn
 			</p>
 			<h3 class="subTitle">sample code</h3>
 			<code>
+				&lt;a&gt;
 				 &lt;section class="btn"&gt;
+				 &lt;/a&gt;
 			</code>
-			<section class="btn"> <a href="#">CONTACT </a></section>	
-		</section>
-
-		<section>
-			<h3>product list button</h3>
-			<h3 class="subTitle">css selector</h3>		
-			<p>
-				 .productBtn
-			</p>
-			<h3 class="subTitle">sample code</h3>
-			<code>
-				 &lt;section class="productBtn"&gt;
-				 	&lt;a href="#"&gt;... &lt;br&gt; ... &lt;br&gt; ... &lt;/a&gt;
-				 &lt;/section&gt;
-			</code>
-			<section class="productBtn"> <a href="#">... <br> ... <br> ... </a></section>	
-		</section>	
-
-		<section>
-			<h3>submit buttons</h3>
-			<h3 class="subTitle">css selector</h3>		
-			<p>
-				 .subBtn
-			</p>
-			<h3 class="subTitle">sample code</h3>
-			<code>
-				 &lt;section class="subBtn"&gt;
-			</code>
-			<section class="subBtn"> <a href="#">buy </a></section>	
+				<a href="#">
+					<div class="btn"> SUBMIT </div>
+				</a>
 		</section>			
 
 		<section>
@@ -167,142 +198,96 @@
 		</section>	
 
 		<section>
-			<h3>navigation</h3>
+			<h3>navigation button</h3>
 			<h3 class="subTitle">css selector</h3>	
 			<p>
-				&lt;nav&gt;
+				&lt;boxLong&gt;
 			</p>
 			<h3 class="subTitle">sample code</h3>
 			<code>
-				&lt;nav&gt;
-				&lt;section class="btn grid-col-1of4"&gt; &lt;a href="#"&gt; CONTACT&lt;/a&gt;
-				&lt;nav&gt;
+				&lt;div class="boxLong"&gt;
+				&lt;a href="contact.html"&gt; CONTACT&lt;/a&gt;
+				&lt;/div&gt;
 			</code>
 
-			<nav>
-				<section class="grid-col-1of4 btn"><a href="#"> CONTACT </a></section>
-				<section class="grid-col-1of4 btn"><a href="#"> ABOUT </a></section>
-				<section class="grid-col-1of4 btn"><a href="#"> STORE LOCATOR </a></section>
-				<section class="grid-col-1of4 btn"><a href="#"> SHOPPING BAG </a></section>
-			</nav>
+				<div class="boxLong">
+					<a href="contact.html"> CONTACT</a>
+				</div>
 		</section>	
-
-		<section>
-			<h3>product list</h3>
-			<h3 class="subTitle">css selector</h3>	
-			<p>
-				&lt;nav&gt;
-			</p>
-			<h3 class="subTitle">sample code</h3>
-			<code>
-				&lt;div class="productList"&gt;<br>
-					&lt;img src="img/bag.jpg" alt="product1"&gt; <br>
-					&lt;figcaption&gt; product1&lt;figcaption&gt;<br>
-					&lt;figcaption class="productListPrice"&gt;$345&lt;/figcaption&gt;<br>
-				&lt;div&gt;
-			</code>
-
-			<!-- .productList manages the width of the product panel-->
-			<div class="productList">
-				<!--.productListItem manages the width of each product section in the productList -->
-				<figure class="productListItem">
-					<img src="img/bag.jpg" alt="product1">
-					<figcaption>
-						<p>product1</p>
-						<p class="productListPrice">$345</p>
-					</figcaption>
-				</figure>
-
-				<figure class="productListItem">
-					<img src="img/bag.jpg" alt="product1">
-					<figcaption>
-						<p>product1</p>
-						<p class="productListPrice">$345</p>
-					</figcaption>
-				</figure>
-
-				<figure class="productListItem">
-					<img src="img/bag.jpg" alt="product1">
-					<figcaption>
-						<p>product1</p>
-						<p class="productListPrice">$345</p>
-					</figcaption>
-				</figure>
-
-				<figure class="productListItem">
-					<img src="img/bag.jpg" alt="product1">
-					<figcaption>
-						<p>product1</p>
-						<p class="productListPrice">$345</p>
-					</figcaption>
-				</figure>
-			</div>
-		</section>		
-
-		<section>
-			<h3>grid structure</h3>
-			<figure>
-				<img src="img/tv.png" alt="game console grid structure">
-				<figcaption>15 grid structure for tv size</figcaption>
-			</figure>
-
-			<figure>
-				<img src="img/phone.png" alt="iphone grid structure">
-				<figcaption>4 grid structure for smartphone</figcaption>
-			</figure>	
-
-			<figure>
-				<img src="img/watch.png" alt="watch grid structure">
-				<figcaption>3 grid structure for smartwatch</figcaption>
-			</figure>					
-		</section>	
-
 	<section>
 		<h3>color swatches</h3>
-		<section class="colorBox colorBlue">
-			<p>#25bdce</p>
+		<section class="colorBox pink">
+			<p>#E52952</p>
 		</section>
 
-		<section class="colorBox colorBlack">
-			<p>rgb(0,0,0)</p>
+		<section class="colorBox gradient">
+			<p>linear-gradient(#B7C1EA, #C3ABC7);</p>
 		</section>
 
 		<section class="colorBox colorGrey">
 			<p>rgb(200,200,200)</p>
 		</section>				
-	</section>		
-		<section>
-			<h3>layout and @media</h3>
-			<h3 class="subTitle">css selector</h3>		
-			<p>
-				 .grid-col-1of2
-			</p>
-			<h3 class="subTitle">sample code</h3>
-			<code>
-				 &lt;div class="grid-col-1of2"&gt;
-			</code>
-			<div class="grid-row">
-				<div class="grid-col-1of2 box"></div>
-				<div class="grid-col-1of2 box2"></div>
-			</div>
-		</section>
+	</section>			
 
 		<section>
-			<h3 class="subTitle">css selector</h3>		
+			<h3>product list</h3>
+			<h3 class="subTitle">css selector</h3>	
 			<p>
-				 .grid-col-1of4
+				.productList, .productListItem
 			</p>
 			<h3 class="subTitle">sample code</h3>
 			<code>
-				 &lt;div class="grid-col-1of4"&gt;
+				&lt;div class="productList flexContainer"&gt;<br>
+					&lt;a href="bagpack.html"&gt; <br>
+					&lt;figure class="productListItem"&gt; <br>
+					&lt;img src="img/backpack7.jpg" alt="product1"&gt;<br>
+					&lt;figcaption&gt;<br>
+					&lt;p&gt;cat carrier&lt;/p&gt;<br>
+					&lt;p&gt;$290&lt;/p&gt;
+					&lt;/figcaption&gt;<br>
+					&lt;/figure&gt;<br>
+					&lt;/a&gt;<br>
+				&lt;div&gt;
 			</code>
-			<div class="grid-row">
-				<div class="grid-col-1of4 box"></div>
-				<div class="grid-col-1of4 box2"></div>
-				<div class="grid-col-1of4 box"></div>
-				<div class="grid-col-1of4 box2"></div>				
+
+			<!-- .productList manages the width of the product panel-->
+			<div class="productList flexContainer">
+				<a href="bagpack.html">
+					<figure class="productListItem">
+						<img src="img/backpack7.jpg" alt="product1">
+						<figcaption>
+							<p>CAT CARRIER</p>
+							<p class="productListPrice">$290</p>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="spacesuit.html">
+					<figure class="productListItem">
+						<img src="img/spacesuit_small.jpg" alt="product2">
+						<figcaption>
+							<p>SPACESUIT</p>
+							<p class="productListPrice">$345</p>
+						</figcaption>
+					</figure>
+				</a>
+
+				<figure class="productListItem">
+					<img src="img/swimsuit.jpg" alt="product3">
+					<figcaption>
+						<p>DOG FRIENDLY SWIMSUIT</p>
+						<p class="productListPrice">$425</p>
+					</figcaption>
+				</figure>						
 			</div>
-		</section>	
+		</section>		
+
+
+
+
+
+
+
+
 	</body>
 
 </html>
