@@ -67,10 +67,6 @@
   clear: both;
 }
 
-.group, .shopping-cart, .column-labels, .product, .totals-item {
-  zoom: 1;
-}
-
 .product .product-price:before, .product .product-line-price:before, .totals-value:before {
   content: '$';
 }

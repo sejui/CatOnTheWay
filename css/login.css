@@ -243,7 +243,6 @@ width: 73%;
   content: 'RESIGTER';
   display: inline-block;
   font-size: 0.3em;
-  text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
@@ -282,9 +281,6 @@ width: 73%;
 }
 .first-layer.alt .input-container input:focus ~ .bar:before, .first-layer.alt .input-container input:focus ~ .bar:after {
   background: #ffffff;
-}
-.first-layer.alt .input-container input:valid ~ label {
-  color: #ffffff;
 }
 .first-layer.alt .input-container label {
   color: rgba(255, 255, 255, 0.8);

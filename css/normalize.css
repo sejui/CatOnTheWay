@@ -273,25 +273,12 @@ ol{
 	list-style-type: decimal;
 }
 
-}
 
 .nav{
 	width:100%;
 	margin:0;
 
 }
-/*.nav:before{
-	content: "";
-    display: table;
-}
-
-.nav:after{
-	clear: both;
-	content: "";
-    display: table;
-}*/
-
-
 
 .boxLong a, .boxShort a{
 	font-family: "gravity-book";
@@ -383,7 +370,6 @@ ol{
    	background-color: white;
    	z-index: 99; 	
 
-   	/*display: none;*/
 }
 
 /************* product list flyout panel ******************/
@@ -428,7 +414,10 @@ ol{
 	z-index: 100;
 	color:#6DC1E2;
 	border:white;
+<<<<<<< HEAD
 	background-color:white;
+=======
+>>>>>>> master
 	width: 20%;
     float: none;
 }
