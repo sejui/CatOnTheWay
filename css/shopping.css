@@ -167,9 +167,10 @@ label{
   font-family: "gravity-bold";
 }
 .button-container{
-	float: right;
+	/*float: right;*/
 	width: 25%;
   font-size: 1em;
+  margin-top:1em;
 }
 
 

@@ -96,7 +96,7 @@ html{
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 0.2em;
+	font-size: 1em;
 	cursor: pointer;
 	-webkit-transition:background-color .5s;
 	transition:background-color .5s;	
