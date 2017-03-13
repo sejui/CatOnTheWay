@@ -414,6 +414,10 @@ ol{
 	z-index: 100;
 	color:#6DC1E2;
 	border:white;
+<<<<<<< HEAD
+	background-color:white;
+=======
+>>>>>>> master
 	width: 20%;
     float: none;
 }
